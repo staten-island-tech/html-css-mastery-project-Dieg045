@@ -13,6 +13,7 @@ body {
 }
 
 .title {
+  background-image: url(.../media/IntroPic1.jpg);
   width: 100vw;
   height: 100vh;
 }
