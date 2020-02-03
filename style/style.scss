@@ -13,15 +13,15 @@ body {
 
 .title {
   background-image: url(../media/IntroPic1.jpg);
-  background-size: 100%;
-  width: 100vw;
+  background-size: cover;
   height: 100vh;
+  width: 100vw;
 }
 
 h1 {
-  position: absolute;
   left: 45vw;
   top: 20vh;
+  margin: 0;
   font-family: Rakkas;
   font-style: normal;
   font-weight: normal;
