@@ -1,8 +1,8 @@
-@import "section1.scss";
-@import "section2.scss";
-@import "section3.scss";
-@import "section4.scss";
-@import "section5.scss";
+@import "_section1.scss";
+@import "_section2.scss";
+@import "_section3.scss";
+@import "_section4.scss";
+@import "_section5.scss";
 
 html {
   margin: 0;
@@ -15,25 +15,4 @@ body {
   width: 100vw;
   height: 500vh;
   margin: 0;
-}
-
-.title {
-  background-image: url(../media/IntroPic1.jpg);
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
-}
-
-.welcome {
-  left: 45vw;
-  top: 20vh;
-  margin: 0;
-  font-family: Rakkas;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 8vh;
-  line-height: 107px;
-  text-align: center;
-  color: #fbd81f;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
