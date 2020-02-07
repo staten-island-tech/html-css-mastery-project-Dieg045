@@ -39,6 +39,14 @@
   }
 }
 
+.header {
+  position: absolute;
+}
+
+.welcome-peru {
+  background-color: #CA0D0D;
+}
+
 html {
   margin: 0;
   padding: 0;
