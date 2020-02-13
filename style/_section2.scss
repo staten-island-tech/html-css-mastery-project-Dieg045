@@ -3,14 +3,26 @@
 .map {
     background-color: #D4AF37;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-//.map-peru {
-//}
+.map-peru {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translate(0,-50%);
+}
 
 .map-peru-image {
     height: 50vh;
+}
+
+.map-pictures {
+    display: flex;
+    justify-content: space-around;
+}
+
+.map-pictures-sites {
+    position: relative;
+    display: flex;
+    height: 15vh;
 }
