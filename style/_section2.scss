@@ -1,6 +1,7 @@
 @import "_variables.scss";
 
 .map {
+    position: relative;
     background-color: #D4AF37;
     height: 100vh;
 }
@@ -17,12 +18,26 @@
 }
 
 .map-pictures {
+    position: absolute; //position: relative is needed in the parent element!!!
+    top: 5vh;
+    left: 5vw;
+    height: 90vh;
+    width: 90vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
 }
 
 .map-pictures-sites {
     position: relative;
     display: flex;
-    height: 15vh;
+    height: 20vh;
+    //visibility: hidden;
 }
+
+.piura {
+
+}
+
+//make two divs, one for the pictures on the top and one for the ones on the bottom.
