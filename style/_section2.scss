@@ -11,6 +11,7 @@
     text-align: center;
     top: 50%;
     transform: translate(0,-50%);
+    z-index: 10;
 }
 
 .map-peru-image {
@@ -23,21 +24,24 @@
     left: 5vw;
     height: 90vh;
     width: 90vw;
-    display: flex;
-    justify-content: space-between;
-    align-content: space-between;
-    flex-wrap: wrap;
 }
 
 .map-pictures-sites {
-    position: relative;
-    display: flex;
-    height: 20vh;
-    //visibility: hidden;
+    position: absolute;
+    height: 15vh;
+    visibility: hidden;
 }
 
-.piura {
-
+.iquitos {
+    right: 0;
 }
 
+.lima {
+    bottom: 0;
+}
+
+.cuzco {
+    right: 0;
+    bottom: 0;
+}
 //make two divs, one for the pictures on the top and one for the ones on the bottom.

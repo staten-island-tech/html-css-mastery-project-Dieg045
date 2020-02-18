@@ -98,6 +98,7 @@
   top: 50%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
+  z-index: 10;
 }
 
 .map-peru-image {
@@ -110,24 +111,25 @@
   left: 5vw;
   height: 90vh;
   width: 90vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .map-pictures-sites {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 20vh;
+  position: absolute;
+  height: 15vh;
+  visibility: hidden;
+}
+
+.iquitos {
+  right: 0;
+}
+
+.lima {
+  bottom: 0;
+}
+
+.cuzco {
+  right: 0;
+  bottom: 0;
 }
 
 html {
