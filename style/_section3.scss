@@ -1,1 +1,50 @@
 @import "_variables.scss";
+
+.food {
+  position: relative;
+  background-color: #d4af37;
+  height: 200vh;
+}
+
+.food-intro {
+    margin: 0;
+    height: 16vh;
+    text-align: center;
+    line-height: 16vh;
+}
+
+.food-collection {
+  position: relative;
+  background-image: url(../media/IncaPattern.jpg);
+  background-size: 100% auto;
+  width: 80vw;
+  height: 100vh;
+  margin: 0;
+  left: 50%;
+  transform: translate(-50%,0);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  @include laptop {
+      flex-direction: row;
+  }
+}
+
+.food-collection-dish {
+    height: 25%;
+    width: 95%;
+    background-size: 100% 100%;
+}
+
+.ceviche {
+    background-image: url(../media/Ceviche.jpg)
+}
+
+.jalea {
+    background-image: url(../media/Jalea.jpg)
+}
+
+.lomosaltado {
+    background-image: url(../media/LomoSaltado.jpg)
+}
