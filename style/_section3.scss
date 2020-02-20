@@ -7,10 +7,10 @@
 }
 
 .food-intro {
-    margin: 0;
-    height: 16vh;
-    text-align: center;
-    line-height: 16vh;
+  margin: 0;
+  height: 16vh;
+  text-align: center;
+  line-height: 16vh;
 }
 
 .food-collection {
@@ -21,30 +21,33 @@
   height: 100vh;
   margin: 0;
   left: 50%;
-  transform: translate(-50%,0);
+  transform: translate(-50%, 0);
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
   @include laptop {
-      flex-direction: row;
+    flex-direction: row;
   }
+  //border-width: 20vw;
+  //border-color: black; this is not working
+  //border-image-width: 20vw;
 }
 
 .food-collection-dish {
-    height: 25%;
-    width: 95%;
-    background-size: 100% 100%;
+  height: 25%;
+  width: 95%;
+  background-size: 100% 100%;
 }
 
 .ceviche {
-    background-image: url(../media/Ceviche.jpg)
+  background-image: url(../media/Ceviche.jpg);
 }
 
 .jalea {
-    background-image: url(../media/Jalea.jpg)
+  background-image: url(../media/Jalea.jpg);
 }
 
 .lomosaltado {
-    background-image: url(../media/LomoSaltado.jpg)
+  background-image: url(../media/LomoSaltado.jpg);
 }

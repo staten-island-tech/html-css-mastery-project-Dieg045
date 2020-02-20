@@ -223,6 +223,19 @@
   background-image: url(../media/LomoSaltado.jpg);
 }
 
+.section4 {
+  position: relative;
+  background-color: #a4331a;
+  height: 150vh;
+}
+
+.gallery {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 html {
   margin: 0;
   padding: 0;

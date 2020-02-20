@@ -1,1 +1,15 @@
 @import "_variables.scss";
+
+.section4 {
+  position: relative;
+  background-color: #a4331a;
+  height: 150vh;
+}
+
+.gallery {
+  position: absolute;
+  display: flex;
+}
+
+//proceed to put items in here for glalery and whatnot
+//think aout the nice yellow border design for this part
