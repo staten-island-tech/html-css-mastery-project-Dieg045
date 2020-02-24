@@ -8,22 +8,29 @@
 
 .food-intro {
   margin: 0;
+  box-sizing: border-box;
+  border: 5vw solid;
+  border-color: #A4331A;
   height: 16vh;
-  text-align: center;
-  line-height: 16vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Rakkas;
+  font-size: 3rem;
 }
 
 .food-collection {
   position: relative;
-  background-image: url(../media/IncaPattern.jpg);
-  background-size: 100% auto;
+  background-color: #A4331A;
+  border: 10vw solid;
+  border-color: #A4331A;
   width: 80vw;
   height: 100vh;
   margin: 0;
   left: 50%;
   transform: translate(-50%, 0);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   @include laptop {
@@ -35,7 +42,7 @@
 }
 
 .food-collection-dish {
-  height: 25%;
+  height: 30%;
   width: 95%;
   background-size: 100% 100%;
 }
