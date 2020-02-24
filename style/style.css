@@ -228,6 +228,14 @@
 
 .ceviche {
   background-image: url(../media/Ceviche.jpg);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.ceviche:active {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  opacity: .75;
 }
 
 .jalea {
