@@ -46,21 +46,19 @@
   background-image: url(../media/Ceviche.jpg);
   transition: all .5s;
   @include centerObjects;
-  z-index: 1;
 }
 
 .ceviche-text {
   margin: 0;
   font-size: 3rem;
   font-family: Rakkas;
-  z-index: 0;
 }
 
 .ceviche:active {
   filter: blur(5px);
   opacity: .75;
   visibility: visible;
-  z-index: 0;
+  //z-index: 0;
 }
 
 .jalea {
