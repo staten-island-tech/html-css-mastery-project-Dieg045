@@ -236,7 +236,6 @@
 .ceviche-text {
   width: 100%;
   height: 100%;
-  display: none;
   margin: 0;
   font-size: 3rem;
   font-family: Rakkas;
@@ -246,11 +245,6 @@
   -webkit-filter: blur(5px);
           filter: blur(5px);
   opacity: .75;
-  display: block;
-}
-
-.ceviche-text:active {
-  display: block;
 }
 
 .jalea {
@@ -260,7 +254,6 @@
 .jalea-text {
   width: 100%;
   height: 100%;
-  display: none;
   margin: 0;
   font-size: 3rem;
   font-family: Rakkas;
@@ -270,12 +263,10 @@
   -webkit-filter: blur(5px);
           filter: blur(5px);
   opacity: .75;
-  display: block;
 }
 
 .jalea-text:active {
-  z-index: 10;
-  display: block;
+  visibility: visible;
 }
 
 .lomoSaltado {
