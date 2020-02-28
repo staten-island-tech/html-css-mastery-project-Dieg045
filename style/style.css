@@ -221,24 +221,29 @@
 }
 
 .food-collection-dish {
+  position: relative;
   height: 30%;
   width: 95%;
-  background-size: 100% 100%;
   -webkit-transition: all .5s;
   transition: all .5s;
   text-align: center;
 }
 
-.ceviche {
-  background-image: url(../media/Ceviche.jpg);
-}
-
 .ceviche-text {
   width: 100%;
   height: 100%;
+  opacity: 1;
   margin: 0;
   font-size: 3rem;
   font-family: Rakkas;
+}
+
+.ceviche-picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .ceviche:active {
@@ -254,6 +259,7 @@
 .jalea-text {
   width: 100%;
   height: 100%;
+  opacity: 1;
   margin: 0;
   font-size: 3rem;
   font-family: Rakkas;
