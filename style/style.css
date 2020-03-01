@@ -232,10 +232,12 @@
 .ceviche-text {
   width: 100%;
   height: 100%;
-  opacity: 1;
   margin: 0;
   font-size: 3rem;
   font-family: Rakkas;
+  line-height: 100%;
+  color: cyan;
+  z-index: 10;
 }
 
 .ceviche-picture {
@@ -244,12 +246,17 @@
   left: 0;
   height: 100%;
   width: 100%;
+  z-index: 0;
 }
 
 .ceviche:active {
   -webkit-filter: blur(5px);
           filter: blur(5px);
   opacity: .75;
+}
+
+.ceviche-text:active {
+  visibility: visible;
 }
 
 .jalea {
