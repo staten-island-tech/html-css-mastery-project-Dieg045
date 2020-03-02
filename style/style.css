@@ -229,72 +229,40 @@
   text-align: center;
 }
 
-.ceviche-text {
+.food-text {
   width: 100%;
   height: 100%;
   margin: 0;
-  font-size: 3rem;
+  font-size: 4rem;
   font-family: Rakkas;
-  line-height: 100%;
-  color: cyan;
-  z-index: 10;
+  line-height: 30vh;
+  color: black;
 }
 
-.ceviche-picture {
+.food-picture {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: 0;
 }
 
-.ceviche:active {
+.ceviche-picture:active {
+  z-index: -1;
   -webkit-filter: blur(5px);
           filter: blur(5px);
   opacity: .75;
 }
 
-.ceviche-text:active {
-  visibility: visible;
-}
-
-.jalea {
-  background-image: url(../media/Jalea.jpg);
-}
-
-.jalea-text {
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  margin: 0;
-  font-size: 3rem;
-  font-family: Rakkas;
-}
-
-.jalea:active {
+.jalea-picture:active {
+  z-index: -1;
   -webkit-filter: blur(5px);
           filter: blur(5px);
   opacity: .75;
 }
 
-.jalea-text:active {
-  visibility: visible;
-}
-
-.lomoSaltado {
-  background-image: url(../media/LomoSaltado.jpg);
-}
-
-.lomoSaltado-text {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  font-size: 3rem;
-  font-family: Rakkas;
-}
-
-.lomoSaltado:active {
+.lomoSaltado-picture:active {
+  z-index: -1;
   -webkit-filter: blur(5px);
           filter: blur(5px);
   opacity: .75;
