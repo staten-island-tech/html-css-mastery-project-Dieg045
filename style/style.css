@@ -162,7 +162,7 @@
 .food {
   position: relative;
   background-color: #d4af37;
-  height: 200vh;
+  height: 125vh;
 }
 
 .food-intro {
@@ -224,8 +224,8 @@
   position: relative;
   height: 30%;
   width: 95%;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
   text-align: center;
 }
 
@@ -268,9 +268,17 @@
   opacity: .75;
 }
 
+/*.backside-ceviche {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 1s ease;
+  backface-visibility: hidden;
+}*/
 .section4 {
   position: relative;
-  background-color: #a4331a;
   height: 150vh;
 }
 
