@@ -2,12 +2,24 @@
 
 .section4 {
   position: relative;
-  height: 150vh;
+  height: 100vh;
 }
 
 .gallery {
   position: absolute;
   display: flex;
+}
+
+.landmark1-exp {
+  position: relative;
+  margin: 0;
+  height: 30vh;
+  width: 35vw;
+  top: 8vh;
+  left: 57vw;
+  padding: 1vh 4vw;
+  background-color: #A4331A;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
 }
 
 //proceed to put items in here for glalery and whatnot
