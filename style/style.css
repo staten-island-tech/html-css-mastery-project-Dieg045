@@ -285,23 +285,31 @@
 }
 
 .gallery {
-  position: absolute;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 25vh;
+  width: 30vw;
+  top: 8vh;
 }
 
 .landmark1-exp {
   position: relative;
   margin: 0;
-  height: 30vh;
   width: 35vw;
-  top: 8vh;
+  bottom: 25vh;
   left: 57vw;
   padding: 1vh 4vw;
   background-color: #A4331A;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
           box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+}
+
+.peru-gallery {
+  position: absolute;
+  height: 30vh;
+  width: 35vw;
 }
 
 html {
