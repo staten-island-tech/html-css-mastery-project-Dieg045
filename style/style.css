@@ -161,16 +161,12 @@
 
 .food {
   position: relative;
-  background-color: #d4af37;
+  background-color: #A4331A;
   height: 125vh;
 }
 
 .food-intro {
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 5vw solid;
-  border-color: #A4331A;
   height: 16vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -187,9 +183,6 @@
 
 .food-collection {
   position: relative;
-  background-color: #A4331A;
-  border: 10vw solid;
-  border-color: #A4331A;
   width: 80vw;
   height: 100vh;
   margin: 0;
