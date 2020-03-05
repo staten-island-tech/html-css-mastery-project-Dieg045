@@ -282,27 +282,32 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 25vh;
-  width: 30vw;
-  top: 8vh;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 48vh;
+  width: 57vw;
+  top: 5vh;
 }
 
 .landmark1-exp {
   position: relative;
   margin: 0;
+  height: 28vh;
   width: 35vw;
-  bottom: 25vh;
   left: 57vw;
+  bottom: 34vh;
   padding: 1vh 4vw;
-  background-color: #A4331A;
+  background-color: #a4331a;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
           box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
 }
 
 .peru-gallery {
   position: absolute;
-  height: 30vh;
-  width: 35vw;
+  width: 57vw;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
 html {
