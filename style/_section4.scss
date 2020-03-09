@@ -11,7 +11,10 @@
   background-position-y: center;
   background-image: url(../media/PeruGallery1.jpg);
   background-repeat: no-repeat;
-  animation: changeBackground 10s ease-in infinite;
+  animation: changeBackground 40s ease-in infinite;
+  //animation: changeBackground1 10s ease-in infinite;
+  //animation: changeBackground2 10s ease-in infinite;
+  //animation: changeBackground3 10s ease-in infinite
   height: 48vh;
   width: 56vw;
   top: 5vh;
@@ -22,10 +25,11 @@
     background-image: url(../media/PeruGallery1.jpg);
   }
   20% {
-    opacity: 50%;
+    opacity: 100%;
   }
   25% {
     background-image: url(../media/PeruGallery2.jpg);
+    opacity: 50%;
   }
   30% {
     opacity: 100%;
@@ -50,14 +54,24 @@
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
 }
 
-/*.peru-gallery {
-  position: absolute;
-  width: 57vw;
-  top: 50%;
-  transform: translate(0, -50%);
-  //visibility: hidden;
-}*/
+.gallery2 {
+  position: relative;
+  height: 45vh;
+  bottom: 25vh;
+}
 
+.gallery2-top {
+  height: 50%;
+}
+////erer/ererere
+
+.condor {
+  position: relative;
+  height: 100%;
+  clip-path: polygon(10% 0%, 90% 0%, 90% 100%, 10% 100%);
+  left: 10%;
+  //width: 50%;
+}
 //proceed to put items in here for glalery and whatnot
 //think aout the nice yellow border design for this part
 

@@ -283,8 +283,8 @@
   background-position-y: center;
   background-image: url(../media/PeruGallery1.jpg);
   background-repeat: no-repeat;
-  -webkit-animation: changeBackground 10s ease-in infinite;
-          animation: changeBackground 10s ease-in infinite;
+  -webkit-animation: changeBackground 40s ease-in infinite;
+          animation: changeBackground 40s ease-in infinite;
   height: 48vh;
   width: 56vw;
   top: 5vh;
@@ -295,10 +295,11 @@
     background-image: url(../media/PeruGallery1.jpg);
   }
   20% {
-    opacity: 50%;
+    opacity: 100%;
   }
   25% {
     background-image: url(../media/PeruGallery2.jpg);
+    opacity: 50%;
   }
   30% {
     opacity: 100%;
@@ -316,10 +317,11 @@
     background-image: url(../media/PeruGallery1.jpg);
   }
   20% {
-    opacity: 50%;
+    opacity: 100%;
   }
   25% {
     background-image: url(../media/PeruGallery2.jpg);
+    opacity: 50%;
   }
   30% {
     opacity: 100%;
@@ -345,13 +347,24 @@
           box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
 }
 
-/*.peru-gallery {
-  position: absolute;
-  width: 57vw;
-  top: 50%;
-  transform: translate(0, -50%);
-  //visibility: hidden;
-}*/
+.gallery2 {
+  position: relative;
+  height: 45vh;
+  bottom: 25vh;
+}
+
+.gallery2-top {
+  height: 50%;
+}
+
+.condor {
+  position: relative;
+  height: 100%;
+  -webkit-clip-path: polygon(10% 0%, 90% 0%, 90% 100%, 10% 100%);
+          clip-path: polygon(10% 0%, 90% 0%, 90% 100%, 10% 100%);
+  left: 10%;
+}
+
 html {
   margin: 0;
   padding: 0;
