@@ -362,7 +362,14 @@
   height: 100%;
   -webkit-clip-path: polygon(10% 0%, 90% 0%, 90% 100%, 10% 100%);
           clip-path: polygon(10% 0%, 90% 0%, 90% 100%, 10% 100%);
-  left: 10%;
+  left: -10%;
+}
+
+.condor-text {
+  position: absolute;
+  margin: 0;
+  height: 100%;
+  width: 30%;
 }
 
 html {

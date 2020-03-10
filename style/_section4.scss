@@ -69,8 +69,15 @@
   position: relative;
   height: 100%;
   clip-path: polygon(10% 0%, 90% 0%, 90% 100%, 10% 100%);
-  left: 10%;
+  left: -10%;
   //width: 50%;
+}
+
+.condor-text {
+  position: absolute;
+  margin: 0;
+  height: 100%;
+  width: 30%;
 }
 //proceed to put items in here for glalery and whatnot
 //think aout the nice yellow border design for this part
