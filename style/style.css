@@ -273,6 +273,10 @@
   backface-visibility: hidden;
 }*/
 .section4 {
+  height: 100vh;
+}
+
+.section5 {
   position: relative;
   height: 100vh;
 }
@@ -363,17 +367,52 @@
 }
 
 .condor {
-  position: relative;
+  height: 25vh;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  -webkit-animation: condorFade 20s ease-in infinite;
+          animation: condorFade 20s ease-in infinite;
+}
+
+.cholito {
+  position: absolute;
   height: 25vh;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
           box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
 }
 
-.condor-text {
-  position: absolute;
-  margin: 0;
-  height: 100%;
-  width: 30%;
+@-webkit-keyframes condorFade {
+  0%, 100% {
+    z-index: 4;
+    opacity: 100%;
+  }
+  22% {
+  }
+  25% {
+    z-index: 0;
+    opacity: 50%;
+  }
+  50% {
+  }
+  75% {
+  }
+}
+
+@keyframes condorFade {
+  0%, 100% {
+    z-index: 4;
+    opacity: 100%;
+  }
+  22% {
+  }
+  25% {
+    z-index: 0;
+    opacity: 50%;
+  }
+  50% {
+  }
+  75% {
+  }
 }
 
 html {
