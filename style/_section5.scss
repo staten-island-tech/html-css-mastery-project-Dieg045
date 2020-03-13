@@ -66,27 +66,47 @@
 .condor {
   height: 25vh;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-  animation: condorFade 20s ease-in infinite;
+  animation: condorFade 40s ease-in infinite;
 }
 
 .cholito {
   position: absolute;
   height: 25vh;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  animation: cholitoFade 40s ease-in infinite;
 }
 
 @keyframes condorFade {
   0%, 100% {
-    z-index: 4;
     opacity: 100%;
   }
-  22%{
+  20% {
   }
-  25% {
-    z-index: 0;
+  24% {
     opacity: 50%;
   }
+  25% {
+    opacity: 0;
+  }
   50%{
+  }
+  75% {
+  }
+}
+
+@keyframes cholitoFade {
+  0%, 100% {
+    opacity: 0%;
+  }
+  20% {
+  }
+  24% {
+    opacity: 50%;
+  }
+  25% {
+    opacity: 100%;
+  }
+  50% {
   }
   75% {
   }

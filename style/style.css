@@ -370,8 +370,8 @@
   height: 25vh;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
           box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-  -webkit-animation: condorFade 20s ease-in infinite;
-          animation: condorFade 20s ease-in infinite;
+  -webkit-animation: condorFade 40s ease-in infinite;
+          animation: condorFade 40s ease-in infinite;
 }
 
 .cholito {
@@ -379,18 +379,21 @@
   height: 25vh;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
           box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  -webkit-animation: cholitoFade 40s ease-in infinite;
+          animation: cholitoFade 40s ease-in infinite;
 }
 
 @-webkit-keyframes condorFade {
   0%, 100% {
-    z-index: 4;
     opacity: 100%;
   }
-  22% {
+  20% {
+  }
+  24% {
+    opacity: 50%;
   }
   25% {
-    z-index: 0;
-    opacity: 50%;
+    opacity: 0;
   }
   50% {
   }
@@ -400,14 +403,51 @@
 
 @keyframes condorFade {
   0%, 100% {
-    z-index: 4;
     opacity: 100%;
   }
-  22% {
+  20% {
+  }
+  24% {
+    opacity: 50%;
   }
   25% {
-    z-index: 0;
+    opacity: 0;
+  }
+  50% {
+  }
+  75% {
+  }
+}
+
+@-webkit-keyframes cholitoFade {
+  0%, 100% {
+    opacity: 0%;
+  }
+  20% {
+  }
+  24% {
     opacity: 50%;
+  }
+  25% {
+    opacity: 100%;
+  }
+  50% {
+  }
+  75% {
+  }
+}
+
+@keyframes cholitoFade {
+  0%, 100% {
+    opacity: 0%;
+  }
+  20% {
+  }
+  24% {
+    opacity: 50%;
+  }
+  25% {
+    opacity: 100%;
   }
   50% {
   }
