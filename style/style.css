@@ -295,15 +295,24 @@
 }
 
 @-webkit-keyframes changeBackground {
-  0% {
+  0%, 100% {
     background-image: url(../media/PeruGallery1.jpg);
+    opacity: 100%;
   }
   20% {
+    background-image: url(../media/PeruGallery1.jpg);
     opacity: 100%;
+  }
+  22% {
+    background-image: url(../media/PeruGallery1.jpg);
+    opacity: 0%;
+  }
+  23% {
+    background-image: url(../media/PeruGallery2.jpg);
   }
   25% {
     background-image: url(../media/PeruGallery2.jpg);
-    opacity: 50%;
+    opacity: 100%;
   }
   30% {
     opacity: 100%;
@@ -317,15 +326,24 @@
 }
 
 @keyframes changeBackground {
-  0% {
+  0%, 100% {
     background-image: url(../media/PeruGallery1.jpg);
+    opacity: 100%;
   }
   20% {
+    background-image: url(../media/PeruGallery1.jpg);
     opacity: 100%;
+  }
+  22% {
+    background-image: url(../media/PeruGallery1.jpg);
+    opacity: 0%;
+  }
+  23% {
+    background-image: url(../media/PeruGallery2.jpg);
   }
   25% {
     background-image: url(../media/PeruGallery2.jpg);
-    opacity: 50%;
+    opacity: 100%;
   }
   30% {
     opacity: 100%;
@@ -383,11 +401,30 @@
           animation: cholitoFade 40s ease-in infinite;
 }
 
+.llama {
+  position: absolute;
+  height: 25vh;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  -webkit-animation: llamaFade 40s ease-in infinite;
+          animation: llamaFade 40s ease-in infinite;
+}
+
+.chiclayo {
+  position: absolute;
+  height: 25vh;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  -webkit-animation: chiclayoFade 40s ease-in infinite;
+          animation: chiclayoFade 40s ease-in infinite;
+}
+
 @-webkit-keyframes condorFade {
   0%, 100% {
     opacity: 100%;
   }
   20% {
+    opacity: 100%;
   }
   24% {
     opacity: 50%;
@@ -395,9 +432,11 @@
   25% {
     opacity: 0;
   }
-  50% {
+  95% {
+    opacity: 0;
   }
-  75% {
+  99% {
+    opacity: 50%;
   }
 }
 
@@ -406,6 +445,7 @@
     opacity: 100%;
   }
   20% {
+    opacity: 100%;
   }
   24% {
     opacity: 50%;
@@ -413,9 +453,11 @@
   25% {
     opacity: 0;
   }
-  50% {
+  95% {
+    opacity: 0;
   }
-  75% {
+  99% {
+    opacity: 50%;
   }
 }
 
@@ -424,6 +466,7 @@
     opacity: 0%;
   }
   20% {
+    opacity: 0%;
   }
   24% {
     opacity: 50%;
@@ -431,9 +474,14 @@
   25% {
     opacity: 100%;
   }
-  50% {
+  45% {
+    opacity: 100%;
   }
-  75% {
+  49% {
+    opacity: 50%;
+  }
+  50% {
+    opacity: 0%;
   }
 }
 
@@ -442,6 +490,7 @@
     opacity: 0%;
   }
   20% {
+    opacity: 0%;
   }
   24% {
     opacity: 50%;
@@ -449,9 +498,104 @@
   25% {
     opacity: 100%;
   }
+  45% {
+    opacity: 100%;
+  }
+  49% {
+    opacity: 50%;
+  }
   50% {
+    opacity: 0%;
+  }
+}
+
+@-webkit-keyframes llamaFade {
+  0%, 100% {
+    opacity: 0%;
+  }
+  45% {
+    opacity: 0%;
+  }
+  49% {
+    opacity: 50%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  70% {
+    opacity: 100%;
+  }
+  74% {
+    opacity: 50%;
   }
   75% {
+    opacity: 0%;
+  }
+}
+
+@keyframes llamaFade {
+  0%, 100% {
+    opacity: 0%;
+  }
+  45% {
+    opacity: 0%;
+  }
+  49% {
+    opacity: 50%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  70% {
+    opacity: 100%;
+  }
+  74% {
+    opacity: 50%;
+  }
+  75% {
+    opacity: 0%;
+  }
+}
+
+@-webkit-keyframes chiclayoFade {
+  0%, 100% {
+    opacity: 0%;
+  }
+  70% {
+    opacity: 0%;
+  }
+  74% {
+    opacity: 50%;
+  }
+  75% {
+    opacity: 100%;
+  }
+  95% {
+    opacity: 100%;
+  }
+  99% {
+    opacity: 50%;
+  }
+}
+
+@keyframes chiclayoFade {
+  0%, 100% {
+    opacity: 0%;
+  }
+  70% {
+    opacity: 0%;
+  }
+  74% {
+    opacity: 50%;
+  }
+  75% {
+    opacity: 100%;
+  }
+  95% {
+    opacity: 100%;
+  }
+  99% {
+    opacity: 50%;
   }
 }
 
