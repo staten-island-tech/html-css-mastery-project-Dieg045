@@ -124,6 +124,8 @@
 
 .lima {
   bottom: 0;
+  -webkit-animation: limaFade 40s ease-in infinite;
+          animation: limaFade 40s ease-in infinite;
 }
 
 .cuzco {
@@ -367,6 +369,15 @@
   background-color: #a4331a;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
           box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+}
+
+.section5-header {
+  position: relative;
+  margin: 0;
+  bottom: 16vh;
+  text-align: center;
+  font-family: Rakkas;
+  font-size: 3rem;
 }
 
 .gallery2 {
