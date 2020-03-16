@@ -1,5 +1,49 @@
 @import "_variables.scss";
 
 .section4 {
-    height: 100vh;
+  height: 100vh;
+}
+
+.top {
+  height: 40vh;
+  display: flex;
+  align-items: center;
+}
+
+.bottom {
+  height: 40vh;
+  display: flex;
+  align-items: center;
+}
+
+.end {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+}
+
+.sec4img {
+  height: 40vh;
+}
+
+.top-text {
+  height: 30vh;
+  margin: 0 5vw;
+  font-family: Rakkas;
+}
+
+.bottom-text {
+  height: 30vh;
+  margin: 0 5vw;
+  font-family: Rakkas;
+}
+
+.barriochino {
+  height: 20vh;
+}
+
+.end-text {
+  height: 15vh;
+  margin: 0 5vw;
+  font-family: Rakkas;
 }
