@@ -497,7 +497,7 @@
           align-items: center;
 }
 
-.end {
+.sec4end {
   height: 20vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -525,6 +525,7 @@
 
 .barriochino {
   height: 20vh;
+  width: 60vw;
 }
 
 .end-text {
