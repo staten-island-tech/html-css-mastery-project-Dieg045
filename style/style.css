@@ -73,17 +73,29 @@
 
 .welcome-button {
   background-color: #ca0d0d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
   margin: 0;
   text-align: center;
   line-height: 3vh;
-  height: 3vh;
+  height: 4vh;
   width: 23vw;
   top: 15vh;
   left: 50vw;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   border-radius: 5vw;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.welcome-button-text {
+  margin: 0;
+  font-family: Rakkas;
+  width: 23vw;
+  line-height: 4vh;
 }
 
 .map {
@@ -623,6 +635,12 @@
           align-items: center;
   font-family: Rakkas;
   font-size: 3rem;
+}
+
+@media (max-width: 350px) {
+  .food-intro {
+    font-size: 2.5rem;
+  }
 }
 
 .food-collection {

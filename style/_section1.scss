@@ -67,18 +67,23 @@
 
 .welcome-button {
   background-color: #ca0d0d;
+  display: flex;
   position: relative;
   margin: 0;
   text-align: center;
   line-height: 3vh;
-  height: 3vh;
+  height: 4vh;
   width: 23vw;
   top: 15vh;
   left: 50vw;
   transform: translate(-50%,0);
   border-radius: 5vw;
+  align-content: center;
 }
 
-//.welcomed-button-text {
-  
-//}
+.welcome-button-text {
+  margin: 0;
+  font-family: Rakkas;
+  width: 23vw;
+  line-height: 4vh;
+}

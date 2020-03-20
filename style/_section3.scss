@@ -13,6 +13,9 @@
   @include centerObjects;
   font-family: Rakkas;
   font-size: 3rem;
+  @include iphone5 {
+    font-size: 2.5rem;
+  }
 }
 
 .food-collection {
