@@ -773,13 +773,11 @@
 }
 
 .top-text {
-  height: 30vh;
   margin: 0 5vw;
   font-family: Rakkas;
 }
 
 .bottom-text {
-  height: 30vh;
   margin: 0 5vw;
   font-family: Rakkas;
 }
@@ -790,7 +788,6 @@
 }
 
 .end-text {
-  height: 15vh;
   margin: 0 5vw;
   font-family: Rakkas;
 }
