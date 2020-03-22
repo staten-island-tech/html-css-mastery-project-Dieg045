@@ -32,3 +32,17 @@ $iphone5: 350px;
   justify-content: center;
   align-items: center;
 }
+
+//screen size
+//colors
+
+$colors: (
+  red: #ff5722,
+  white: #fff,
+  blue: #00b0ff,
+  black: #000
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}

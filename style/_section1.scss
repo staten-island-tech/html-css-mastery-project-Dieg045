@@ -65,6 +65,8 @@
   width: 85vw;
 }
 
+//vamonos button
+
 .welcome-button {
   background-color: #ca0d0d;
   display: flex;
@@ -80,7 +82,14 @@
   border-radius: 5vw;
   align-content: center;
   text-decoration: none;
-  //transition: all 0.25s ease;
+  @include laptop {
+    display: none;
+  }
+}
+
+.welcome-button:active {
+  transform: translate(-50%,-2px);
+  box-shadow: 0 10px 0.5rem rgba(color(black), 0.2);
 }
 
 .welcome-button-text {
