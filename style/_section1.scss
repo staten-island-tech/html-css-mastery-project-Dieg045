@@ -79,11 +79,14 @@
   transform: translate(-50%,0);
   border-radius: 5vw;
   align-content: center;
+  text-decoration: none;
+  //transition: all 0.25s ease;
 }
 
 .welcome-button-text {
   margin: 0;
   font-family: Rakkas;
+  color: black;
   width: 23vw;
   line-height: 4vh;
 }

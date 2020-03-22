@@ -89,11 +89,13 @@
   border-radius: 5vw;
   -ms-flex-line-pack: center;
       align-content: center;
+  text-decoration: none;
 }
 
 .welcome-button-text {
   margin: 0;
   font-family: Rakkas;
+  color: black;
   width: 23vw;
   line-height: 4vh;
 }
