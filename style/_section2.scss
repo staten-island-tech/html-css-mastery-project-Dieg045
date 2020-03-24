@@ -17,6 +17,9 @@
   height: 50vh;
   width: 73.5vw;
   z-index: 2;
+  @include laptop {
+    width: auto;
+  }
 }
 
 .map-pictures {
