@@ -282,7 +282,6 @@
 
 .map {
   position: relative;
-  background-color: #d4af37;
   height: 100vh;
   width: 99vw;
 }
@@ -806,7 +805,6 @@
 
 .food {
   position: relative;
-  background-color: #A4331A;
   height: 125vh;
   width: 99vw;
 }
@@ -908,6 +906,8 @@
   left: 0;
   -webkit-transition: all 1s;
   transition: all 1s;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
 }
 
 .card-side-front {
@@ -918,16 +918,28 @@
   z-index: 0;
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
+  background-color: #ffb347;
 }
 
 .card:hover .card-side-front {
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 .card:hover .card-side-back {
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg);
+}
+
+.food-title {
+  font-family: Rakkas;
+  line-height: 100%;
+  font-size: 7vh;
+}
+
+.food-description {
+  font-size: 2vh;
+  margin: auto 1rem;
 }
 
 .food-text {
@@ -946,8 +958,6 @@
   left: 0;
   height: 100%;
   width: 100%;
-  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
 }
 
 .ceviche-picture:active {
