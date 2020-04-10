@@ -880,7 +880,7 @@
   }
 }
 
-.food-collection-dish {
+.card {
   position: relative;
   height: 30%;
   width: 95%;
@@ -890,10 +890,44 @@
 }
 
 @media (min-width: 900px) {
-  .food-collection-dish {
+  .card {
     width: 28%;
     height: 50%;
+    -webkit-perspective: 150rem;
+            perspective: 150rem;
   }
+}
+
+.card-side {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.card-side-front {
+  z-index: 1;
+}
+
+.card-side-back {
+  z-index: 0;
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.card:hover .card-side-front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.card:hover .card-side-back {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
 }
 
 .food-text {
