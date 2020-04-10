@@ -811,9 +811,15 @@
   width: 99vw;
 }
 
+@media (min-width: 900px) {
+  .food {
+    height: 100vh;
+  }
+}
+
 .food-intro {
   margin: 0;
-  height: 16vh;
+  height: 16%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -842,7 +848,7 @@
 .food-collection {
   position: relative;
   width: 80%;
-  height: 100vh;
+  height: 84%;
   margin: 0;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
@@ -886,6 +892,7 @@
 @media (min-width: 900px) {
   .food-collection-dish {
     width: 28%;
+    height: 50%;
   }
 }
 

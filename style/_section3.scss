@@ -6,11 +6,14 @@
   background-color: #A4331A;
   height: 125vh;
   width: 99vw;//only this is changing for now
+  @include laptop {
+    height: 100vh;
+  }
 }
 
 .food-intro {
   margin: 0;
-  height: 16vh;
+  height: 16%;
   @include centerObjects;
   font-family: Rakkas;
   font-size: 3rem;
@@ -25,7 +28,7 @@
 .food-collection {
   position: relative;
   width: 80%;
-  height: 100vh;
+  height: 84%;
   margin: 0;
   left: 50%;
   transform: translate(-50%, 0);
@@ -48,6 +51,7 @@
   text-align: center;
   @include laptop {
     width: 28%;
+    height: 50%;
   }
 }
 
