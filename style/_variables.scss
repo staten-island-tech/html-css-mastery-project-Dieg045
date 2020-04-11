@@ -27,6 +27,12 @@ $iphone5: 350px;
   }
 }
 
+@mixin laptopMin {
+  @media (max-width: #{$laptop}) {
+    @content;
+  }
+}
+
 @mixin centerObjects {
   display: flex;
   justify-content: center;

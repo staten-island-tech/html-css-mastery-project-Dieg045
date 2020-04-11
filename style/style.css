@@ -995,7 +995,22 @@
   width: 99vw;
 }
 
+@media (min-width: 900px) {
+  .section4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .top {
+  position: relative;
   height: 40vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1006,6 +1021,7 @@
 }
 
 .bottom {
+  position: relative;
   height: 40vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1015,7 +1031,16 @@
           align-items: center;
 }
 
+@media (min-width: 900px) {
+  .bottom {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
 .sec4end {
+  position: relative;
   height: 20vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1034,9 +1059,27 @@
   font-family: Rakkas;
 }
 
+@media (min-width: 900px) {
+  .top-text {
+    position: absolute;
+  }
+}
+
 .bottom-text {
   margin: 0 5vw;
   font-family: Rakkas;
+}
+
+@media (min-width: 900px) {
+  .bottom-text {
+    margin: 0;
+  }
+}
+
+@media (min-width: 900px) {
+  .bottom-img {
+    position: absolute;
+  }
 }
 
 .barriochino {
@@ -1047,6 +1090,12 @@
 .end-text {
   margin: 0 5vw;
   font-family: Rakkas;
+}
+
+@media (min-width: 900px) {
+  .end-text {
+    position: absolute;
+  }
 }
 
 .section5 {
@@ -1072,6 +1121,12 @@
           animation: pic1Fade 40s ease-in infinite;
 }
 
+@media (min-width: 900px) {
+  .gallerypic1 {
+    height: 10vh;
+  }
+}
+
 .gallerypic2 {
   position: absolute;
   width: 57vw;
@@ -1080,6 +1135,12 @@
           transform: translate(0, -50%);
   -webkit-animation: pic2Fade 40s ease-in infinite;
           animation: pic2Fade 40s ease-in infinite;
+}
+
+@media (min-width: 900px) {
+  .gallerypic2 {
+    height: 10vh;
+  }
 }
 
 .gallerypic3 {
@@ -1092,6 +1153,12 @@
           animation: pic3Fade 40s ease-in infinite;
 }
 
+@media (min-width: 900px) {
+  .gallerypic3 {
+    height: 10vh;
+  }
+}
+
 .gallerypic4 {
   position: absolute;
   width: 57vw;
@@ -1100,6 +1167,12 @@
           transform: translate(0, -50%);
   -webkit-animation: pic4Fade 40s ease-in infinite;
           animation: pic4Fade 40s ease-in infinite;
+}
+
+@media (min-width: 900px) {
+  .gallerypic4 {
+    height: 10vh;
+  }
 }
 
 @-webkit-keyframes pic1Fade {

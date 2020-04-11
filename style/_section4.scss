@@ -3,21 +3,32 @@
 .section4 {
   height: 100vh;
   width: 99vw;//only this is changing for now
+  @include laptop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .top {
+  position: relative;
   height: 40vh;
   display: flex;
   align-items: center;
 }
 
 .bottom {
+  position: relative;
   height: 40vh;
   display: flex;
   align-items: center;
+  @include laptop {
+    order: 1;
+  }
 }
 
 .sec4end {
+  position: relative;
   height: 20vh;
   display: flex;
   align-items: center;
@@ -30,11 +41,23 @@
 .top-text {
   margin: 0 5vw;
   font-family: Rakkas;
+  @include laptop {
+    position: absolute;
+  }
 }
 
 .bottom-text {
   margin: 0 5vw;
   font-family: Rakkas;
+  @include laptop {
+    margin: 0;
+  }
+}
+
+.bottom-img {
+  @include laptop {
+    position: absolute;
+  }
 }
 
 .barriochino {
@@ -45,4 +68,7 @@
 .end-text {
   margin: 0 5vw;
   font-family: Rakkas;
+  @include laptop {
+    position: absolute;
+  }
 }

@@ -19,6 +19,9 @@
   top: 50%;
   transform: translate(0, -50%);
   animation: pic1Fade 40s ease-in infinite;
+  @include laptop {
+    height: 10vh;
+  }
 }
 
 .gallerypic2 {
@@ -27,6 +30,9 @@
   top: 50%;
   transform: translate(0, -50%);
   animation: pic2Fade 40s ease-in infinite;
+  @include laptop {
+    height: 10vh;
+  }
 }
 
 .gallerypic3 {
@@ -35,6 +41,9 @@
   top: 50%;
   transform: translate(0, -50%);
   animation: pic3Fade 40s ease-in infinite;
+  @include laptop {
+    height: 10vh;
+  }
 }
 
 .gallerypic4 {
@@ -43,6 +52,9 @@
   top: 50%;
   transform: translate(0, -50%);
   animation: pic4Fade 40s ease-in infinite;
+  @include laptop {
+    height: 10vh;
+  }
 }
 
 @keyframes pic1Fade {
