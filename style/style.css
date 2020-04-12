@@ -991,187 +991,74 @@
   backface-visibility: hidden;
 }*/
 .section4 {
-  height: 100vh;
-  width: 99vw;
-}
-
-@media (min-width: 900px) {
-  .section4 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
-.top {
-  position: relative;
-  height: 40vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.bottom {
-  position: relative;
-  height: 40vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media (min-width: 900px) {
-  .bottom {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-}
-
-.sec4end {
-  position: relative;
-  height: 20vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.sec4img {
-  height: 40vh;
-}
-
-.top-text {
-  margin: 0 5vw;
-  font-family: Rakkas;
-}
-
-@media (min-width: 900px) {
-  .top-text {
-    position: absolute;
-  }
-}
-
-.bottom-text {
-  margin: 0 5vw;
-  font-family: Rakkas;
-}
-
-@media (min-width: 900px) {
-  .bottom-text {
-    margin: 0;
-  }
-}
-
-@media (min-width: 900px) {
-  .bottom-img {
-    position: absolute;
-  }
-}
-
-.barriochino {
-  height: 20vh;
-  width: 60vw;
-}
-
-.end-text {
-  margin: 0 5vw;
-  font-family: Rakkas;
-}
-
-@media (min-width: 900px) {
-  .end-text {
-    position: absolute;
-  }
-}
-
-.section5 {
   position: relative;
   height: 100vh;
   width: 99vw;
 }
 
-.gallery {
+.section4-header {
   position: relative;
-  height: 48vh;
-  width: 57vw;
-  top: 5vh;
+  margin: 0;
+  text-align: center;
+  font-family: Rakkas;
+  font-size: 10rem;
 }
 
 .gallerypic1 {
   position: absolute;
+  top: 50vh;
+  left: 25vw;
   width: 57vw;
-  top: 50%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  -webkit-animation: pic1Fade 40s ease-in infinite;
-          animation: pic1Fade 40s ease-in infinite;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 @media (min-width: 900px) {
   .gallerypic1 {
-    height: 10vh;
+    width: 18vw;
   }
 }
 
 .gallerypic2 {
   position: absolute;
+  top: 50vh;
+  left: 25vw;
   width: 57vw;
-  top: 50%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  -webkit-animation: pic2Fade 40s ease-in infinite;
-          animation: pic2Fade 40s ease-in infinite;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 @media (min-width: 900px) {
   .gallerypic2 {
-    height: 10vh;
+    width: 25vw;
   }
 }
 
 .gallerypic3 {
   position: absolute;
-  width: 57vw;
-  top: 50%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  -webkit-animation: pic3Fade 40s ease-in infinite;
-          animation: pic3Fade 40s ease-in infinite;
+  top: 50vh;
+  left: 25vw;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 @media (min-width: 900px) {
   .gallerypic3 {
-    height: 10vh;
+    width: 16vw;
   }
 }
 
 .gallerypic4 {
   position: absolute;
-  width: 57vw;
-  top: 50%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  -webkit-animation: pic4Fade 40s ease-in infinite;
-          animation: pic4Fade 40s ease-in infinite;
+  top: 50vh;
+  left: 25vw;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 @media (min-width: 900px) {
   .gallerypic4 {
-    height: 10vh;
+    width: 25vw;
   }
 }
 
@@ -1355,97 +1242,41 @@
   }
 }
 
-.landmark1-exp {
+/*.gallery2 {
+  display: none;
   position: relative;
-  margin: 0;
-  height: 28vh;
-  width: 35vw;
-  left: 57vw;
-  bottom: 34vh;
-  padding: 1vh 4vw;
-  background-color: #a4331a;
-  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-}
-
-.section5-header {
-  position: relative;
-  margin: 0;
-  bottom: 16vh;
-  text-align: center;
-  font-family: Rakkas;
-  font-size: 3rem;
-}
-
-.gallery2 {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 30vh;
   bottom: 15vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .condor {
   height: 25vh;
-  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-  -webkit-animation: condorFade 40s ease-in infinite;
-          animation: condorFade 40s ease-in infinite;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  animation: condorFade 40s ease-in infinite;
 }
 
 .cholito {
   position: absolute;
   height: 25vh;
-  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-  -webkit-animation: cholitoFade 40s ease-in infinite;
-          animation: cholitoFade 40s ease-in infinite;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  animation: cholitoFade 40s ease-in infinite;
 }
 
 .llama {
   position: absolute;
   height: 25vh;
-  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-  -webkit-animation: llamaFade 40s ease-in infinite;
-          animation: llamaFade 40s ease-in infinite;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  animation: llamaFade 40s ease-in infinite;
 }
 
 .chiclayo {
   position: absolute;
   height: 25vh;
-  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-  -webkit-animation: chiclayoFade 40s ease-in infinite;
-          animation: chiclayoFade 40s ease-in infinite;
-}
-
-@-webkit-keyframes condorFade {
-  0%, 100% {
-    opacity: 100%;
-  }
-  20% {
-    opacity: 100%;
-  }
-  24% {
-    opacity: 50%;
-  }
-  25% {
-    opacity: 0;
-  }
-  95% {
-    opacity: 0;
-  }
-  99% {
-    opacity: 50%;
-  }
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  animation: chiclayoFade 40s ease-in infinite;
 }
 
 @keyframes condorFade {
@@ -1469,30 +1300,6 @@
   }
 }
 
-@-webkit-keyframes cholitoFade {
-  0%, 100% {
-    opacity: 0%;
-  }
-  20% {
-    opacity: 0%;
-  }
-  24% {
-    opacity: 50%;
-  }
-  25% {
-    opacity: 100%;
-  }
-  45% {
-    opacity: 100%;
-  }
-  49% {
-    opacity: 50%;
-  }
-  50% {
-    opacity: 0%;
-  }
-}
-
 @keyframes cholitoFade {
   0%, 100% {
     opacity: 0%;
@@ -1513,30 +1320,6 @@
     opacity: 50%;
   }
   50% {
-    opacity: 0%;
-  }
-}
-
-@-webkit-keyframes llamaFade {
-  0%, 100% {
-    opacity: 0%;
-  }
-  45% {
-    opacity: 0%;
-  }
-  49% {
-    opacity: 50%;
-  }
-  50% {
-    opacity: 100%;
-  }
-  70% {
-    opacity: 100%;
-  }
-  74% {
-    opacity: 50%;
-  }
-  75% {
     opacity: 0%;
   }
 }
@@ -1565,27 +1348,6 @@
   }
 }
 
-@-webkit-keyframes chiclayoFade {
-  0%, 100% {
-    opacity: 0%;
-  }
-  70% {
-    opacity: 0%;
-  }
-  74% {
-    opacity: 50%;
-  }
-  75% {
-    opacity: 100%;
-  }
-  95% {
-    opacity: 100%;
-  }
-  99% {
-    opacity: 50%;
-  }
-}
-
 @keyframes chiclayoFade {
   0%, 100% {
     opacity: 0%;
@@ -1605,8 +1367,7 @@
   99% {
     opacity: 50%;
   }
-}
-
+}*/
 html {
   margin: 0;
   padding: 0;

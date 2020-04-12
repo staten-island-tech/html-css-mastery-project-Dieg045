@@ -1,74 +1,288 @@
 @import "_variables.scss";
 
 .section4 {
+  position: relative;
   height: 100vh;
-  width: 99vw;//only this is changing for now
+  width: 99vw;
+}
+
+.section4-header {
+  position: relative;
+  margin: 0;
+  text-align: center;
+  font-family: Rakkas;
+  font-size: 10rem;
+}
+
+.gallerypic1 {
+  position: absolute;
+  top: 50vh;
+  left: 25vw;
+  width: 57vw;
+  transform: translate(-50%, -50%);
+  @include laptopMin {
+    //animation: pic1Fade 40s ease-in infinite;
+  }
   @include laptop {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 18vw;
   }
 }
 
-.top {
+.gallerypic2 {
+  position: absolute;
+  top: 50vh;
+  left: 25vw;
+  width: 57vw;
+  transform: translate(-50%, -50%);
+  @include laptopMin {
+    //animation: pic2Fade 40s ease-in infinite;
+  }
+  @include laptop {
+    width: 25vw;
+  }
+}
+
+.gallerypic3 {
+  position: absolute;
+  top: 50vh;
+  left: 25vw;
+  //width: 57vw;
+  transform: translate(-50%, -50%);
+  @include laptopMin {
+  //  animation: pic3Fade 40s ease-in infinite;
+  }
+  @include laptop {
+    width: 16vw;
+  }
+}
+
+.gallerypic4 {
+  position: absolute;
+  top: 50vh;
+  left: 25vw;
+  //width: 57vw;
+  transform: translate(-50%, -50%);
+  @include laptopMin {
+    //animation: pic4Fade 40s ease-in infinite;
+  }
+  @include laptop {
+    width: 25vw;
+  }
+}
+
+@keyframes pic1Fade {
+  0%, 100% {
+    opacity: 100%;
+  }
+  20% {
+    opacity: 100%;
+  }
+  24% {
+    opacity: 50%;
+  }
+  25% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 50%;
+  }
+}
+
+@keyframes pic2Fade {
+  0%, 100% {
+    opacity: 0%;
+  }
+  20% {
+    opacity: 0%;
+  }
+  24% {
+    opacity: 50%;
+  }
+  25% {
+    opacity: 100%;
+  }
+  45% {
+    opacity: 100%;
+  }
+  49% {
+    opacity: 50%;
+  }
+  50% {
+    opacity: 0%;
+  }
+}
+
+@keyframes pic3Fade {
+  0%, 100% {
+    opacity: 0%;
+  }
+  45% {
+    opacity: 0%;
+  }
+  49% {
+    opacity: 50%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  70% {
+    opacity: 100%;
+  }
+  74% {
+    opacity: 50%;
+  }
+  75% {
+    opacity: 0%;
+  }
+}
+
+@keyframes pic4Fade {
+  0%, 100% {
+    opacity: 0%;
+  }
+  70% {
+    opacity: 0%;
+  }
+  74% {
+    opacity: 50%;
+  }
+  75% {
+    opacity: 100%;
+  }
+  95% {
+    opacity: 100%;
+  }
+  99% {
+    opacity: 50%;
+  }
+}
+
+/*.gallery2 {
+  display: none;
   position: relative;
-  height: 40vh;
   display: flex;
+  height: 30vh;
+  bottom: 15vh;
+  justify-content: center;
   align-items: center;
 }
 
-.bottom {
-  position: relative;
-  height: 40vh;
-  display: flex;
-  align-items: center;
-  @include laptop {
-    order: 1;
+.condor {
+  height: 25vh;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  animation: condorFade 40s ease-in infinite;
+}
+
+.cholito {
+  position: absolute;
+  height: 25vh;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  animation: cholitoFade 40s ease-in infinite;
+}
+
+.llama {
+  position: absolute;
+  height: 25vh;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  animation: llamaFade 40s ease-in infinite;
+}
+
+.chiclayo {
+  position: absolute;
+  height: 25vh;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  animation: chiclayoFade 40s ease-in infinite;
+}
+
+@keyframes condorFade {
+  0%, 100% {
+    opacity: 100%;
+  }
+  20% {
+    opacity: 100%;
+  }
+  24% {
+    opacity: 50%;
+  }
+  25% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 50%;
   }
 }
 
-.sec4end {
-  position: relative;
-  height: 20vh;
-  display: flex;
-  align-items: center;
-}
-
-.sec4img {
-  height: 40vh;
-}
-
-.top-text {
-  margin: 0 5vw;
-  font-family: Rakkas;
-  @include laptop {
-    position: absolute;
+@keyframes cholitoFade {
+  0%, 100% {
+    opacity: 0%;
+  }
+  20% {
+    opacity: 0%;
+  }
+  24% {
+    opacity: 50%;
+  }
+  25% {
+    opacity: 100%;
+  }
+  45% {
+    opacity: 100%;
+  }
+  49% {
+    opacity: 50%;
+  }
+  50% {
+    opacity: 0%;
   }
 }
 
-.bottom-text {
-  margin: 0 5vw;
-  font-family: Rakkas;
-  @include laptop {
-    margin: 0;
+@keyframes llamaFade {
+  0%, 100% {
+    opacity: 0%;
+  }
+  45% {
+    opacity: 0%;
+  }
+  49% {
+    opacity: 50%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  70% {
+    opacity: 100%;
+  }
+  74% {
+    opacity: 50%;
+  }
+  75% {
+    opacity: 0%;
   }
 }
 
-.bottom-img {
-  @include laptop {
-    position: absolute;
+@keyframes chiclayoFade {
+  0%, 100% {
+    opacity: 0%;
   }
-}
-
-.barriochino {
-  height: 20vh;
-  width: 60vw;
-}
-
-.end-text {
-  margin: 0 5vw;
-  font-family: Rakkas;
-  @include laptop {
-    position: absolute;
+  70% {
+    opacity: 0%;
   }
-}
+  74% {
+    opacity: 50%;
+  }
+  75% {
+    opacity: 100%;
+  }
+  95% {
+    opacity: 100%;
+  }
+  99% {
+    opacity: 50%;
+  }
+}*/
