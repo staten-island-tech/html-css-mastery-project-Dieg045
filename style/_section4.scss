@@ -2,8 +2,6 @@
 
 .section4 {
   position: relative;
-  height: 100vh;
-  width: 99vw;
 }
 
 .section4-header {
@@ -14,12 +12,24 @@
   font-size: 10rem;
 }
 
-.gallerypic1 {
+.section4-header-english {
+  margin: 0;
+  text-align: center;
+  font-family: Rakkas;
+  font-size: 2rem;
+}
+
+.gallery-pic {
   position: absolute;
-  top: 41vh;
-  left: 20vw;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  outline-offset: 1rem;
+  transition: all .2s;
+}
+
+.gallerypic1 {
+  top: 22vh;
+  left: 14vw;
   width: 57vw;
-  transform: translate(-50%, -50%);
   @include laptopMin {
     //animation: pic1Fade 40s ease-in infinite;
   }
@@ -29,11 +39,9 @@
 }
 
 .gallerypic2 {
-  position: absolute;
-  top: 43vh;
-  left: 36vw;
+  top: 31vh;
+  left: 27vw;
   width: 57vw;
-  transform: translate(-50%, -50%);
   @include laptopMin {
     //animation: pic2Fade 40s ease-in infinite;
   }
@@ -43,11 +51,9 @@
 }
 
 .gallerypic3 {
-  position: absolute;
-  top: 60vh;
-  left: 35vw;
+  top: 44vh;
+  left: 18vw;
   //width: 57vw;
-  transform: translate(-50%, -50%);
   @include laptopMin {
   //  animation: pic3Fade 40s ease-in infinite;
   }
@@ -57,11 +63,9 @@
 }
 
 .gallerypic4 {
-  position: absolute;
-  top: 70vh;
-  left: 25vw;
+  top: 47vh;
+  left: 30vw;
   //width: 57vw;
-  transform: translate(-50%, -50%);
   @include laptopMin {
     //animation: pic4Fade 40s ease-in infinite;
   }
@@ -70,11 +74,46 @@
   }
 }
 
-.gallery-pic:hover {
-  transform: scale(1.5); /////////////////FIX TRANSOFRM!
-  outline: 1rem solid orange;
-  z-index: 10;
+.sec-four-sent {
+  position: absolute;
+  margin: 0;
+  width: 25vw;
+  left: 67%;
+  top: 37vh;
+  font-size: 4vh;
+  font-family: Rakkas;
+  opacity: 0;
+  transition: all 0.2s;
 }
+
+.spanish-sent {
+  margin: 0;
+}
+
+.english-sent {
+  margin: 0;
+  font-size: 2vh;
+}
+
+//all hover effects
+
+.gallery-pic:hover {
+  transform: scale(1.5);
+  outline: 1.25rem solid orange;
+  z-index: 10;
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.6);
+}
+
+.gallery-pic:hover ~ .gallery-pic:not(:hover) {
+  transform: scale(0.7);
+  opacity: .4;
+}
+
+.gallery-pic:hover + .sec-four-sent:not(:hover) {
+  opacity: 1;
+}
+
+//all animations
 
 @keyframes pic1Fade {
   0%, 100% {
