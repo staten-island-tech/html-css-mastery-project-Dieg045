@@ -1006,8 +1006,8 @@
 
 .gallerypic1 {
   position: absolute;
-  top: 50vh;
-  left: 25vw;
+  top: 41vh;
+  left: 20vw;
   width: 57vw;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1021,8 +1021,8 @@
 
 .gallerypic2 {
   position: absolute;
-  top: 50vh;
-  left: 25vw;
+  top: 43vh;
+  left: 36vw;
   width: 57vw;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1036,8 +1036,8 @@
 
 .gallerypic3 {
   position: absolute;
-  top: 50vh;
-  left: 25vw;
+  top: 60vh;
+  left: 35vw;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
@@ -1050,7 +1050,7 @@
 
 .gallerypic4 {
   position: absolute;
-  top: 50vh;
+  top: 70vh;
   left: 25vw;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1060,6 +1060,13 @@
   .gallerypic4 {
     width: 25vw;
   }
+}
+
+.gallery-pic:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  outline: 1rem solid orange;
+  z-index: 10;
 }
 
 @-webkit-keyframes pic1Fade {

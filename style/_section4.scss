@@ -16,8 +16,8 @@
 
 .gallerypic1 {
   position: absolute;
-  top: 50vh;
-  left: 25vw;
+  top: 41vh;
+  left: 20vw;
   width: 57vw;
   transform: translate(-50%, -50%);
   @include laptopMin {
@@ -30,8 +30,8 @@
 
 .gallerypic2 {
   position: absolute;
-  top: 50vh;
-  left: 25vw;
+  top: 43vh;
+  left: 36vw;
   width: 57vw;
   transform: translate(-50%, -50%);
   @include laptopMin {
@@ -44,8 +44,8 @@
 
 .gallerypic3 {
   position: absolute;
-  top: 50vh;
-  left: 25vw;
+  top: 60vh;
+  left: 35vw;
   //width: 57vw;
   transform: translate(-50%, -50%);
   @include laptopMin {
@@ -58,7 +58,7 @@
 
 .gallerypic4 {
   position: absolute;
-  top: 50vh;
+  top: 70vh;
   left: 25vw;
   //width: 57vw;
   transform: translate(-50%, -50%);
@@ -68,6 +68,12 @@
   @include laptop {
     width: 25vw;
   }
+}
+
+.gallery-pic:hover {
+  transform: scale(1.5); /////////////////FIX TRANSOFRM!
+  outline: 1rem solid orange;
+  z-index: 10;
 }
 
 @keyframes pic1Fade {
