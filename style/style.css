@@ -280,19 +280,27 @@
   line-height: 4vh;
 }
 
+.map-section {
+  position: relative;
+}
+
 .map {
-  position: relative;
-}
-
-.map-peru {
-  position: relative;
-  height: 50vh;
+  position: absolute;
+  background-image: url(../media/PeruMap.svg);
+  background-size: cover;
+  height: 50%;
   left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  top: 25%;
+  height: auto;
+  width: auto;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
+/*.map-peru {
+  position: absolute;
+  height: 50vh;
+}*/
 /*.map-peru-image {
   height: 50vh;
   width: 73.5vw;
@@ -303,18 +311,6 @@
 }*/
 .map-pictures {
   position: absolute;
-  z-index: 10;
-}
-
-.map-boxes {
-  position: absolute;
-  height: 20vh;
-  left: 50%;
-}
-
-.piura {
-  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
 }
 
 .piura-pic {
@@ -330,11 +326,6 @@
   font-size: 2rem;
 }
 
-.iquitos {
-  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-}
-
 .iquitos-pic {
   height: 20vh;
 }
@@ -348,12 +339,6 @@
   font-size: 2rem;
 }
 
-.lima {
-  bottom: 0;
-  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-}
-
 .lima-pic {
   height: 20vh;
 }
@@ -365,12 +350,6 @@
   height: 2rem;
   font-family: Rakkas;
   font-size: 2rem;
-}
-
-.cuzco {
-  bottom: 0;
-  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
 }
 
 .cuzco-pic {
@@ -389,15 +368,9 @@
 .map-peru-dots {
   position: absolute;
   height: 1rem;
-  width: 1.5rem;
+  width: 1rem;
   background-color: black;
-  -webkit-clip-path: circle(0.5rem);
-          clip-path: circle(0.5rem);
-  z-index: 3;
-}
-
-.dot-piura {
-  top: 20%;
+  border-radius: .5rem;
 }
 
 @media (max-width: 900px) {
@@ -407,19 +380,25 @@
   }
 }
 
-.dot-iquitos {
-  right: 38%;
-  top: 18%;
+@media (max-width: 900px) {
+  .dot-iquitos {
+    right: 38%;
+    top: 18%;
+  }
 }
 
-.dot-lima {
-  bottom: 31%;
-  left: 40%;
+@media (max-width: 900px) {
+  .dot-lima {
+    bottom: 31%;
+    left: 40%;
+  }
 }
 
-.dot-cuzco {
-  right: 33%;
-  bottom: 27.5%;
+@media (max-width: 900px) {
+  .dot-cuzco {
+    right: 33%;
+    bottom: 27.5%;
+  }
 }
 
 @-webkit-keyframes piuraFade {
