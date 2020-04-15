@@ -4,22 +4,14 @@
   position: relative;
 }
 
-.map {
+.map-peru {
   position: absolute;
-  background-image: url(../media/PeruMap.svg);
-  background-size: cover;
-  height: 50%;
   left: 50%;
-  top: 25%;
-  height: auto;
-  width: auto;
-  transform: translateX(-50%);
-}
-
-/*.map-peru {
-  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
   height: 50vh;
-}*/
+  width: 20.5vw;//ONLY FOR DESKTOP
+}
 
 //use this for the above class
 /*.map-peru-image {
@@ -31,21 +23,44 @@
   }
 }*/
 
+.piura {
+  position: absolute;
+}
+
 .map-pictures {
   position: absolute;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
 }
 
 .piura-pic {
-  height: 20vh;
+  height: 25vh;
+  width: 21vw;
+  top: 10vh;
+  left: 19vw;
+  transform: translateX(-50%);
 }
 
-.piura-text {
+.piura-title {
   position: absolute;
-  padding: 0 .5rem;
-  top: 0;
-  height: 2rem;
+  margin: 0;
+  left: 19vw;
+  top: 44vh;
+  transform: translate(-50%, -50%);
+  //padding: 0 .5rem;
+  //height: 2rem;
   font-family: Rakkas;
-  font-size: 2rem;
+  font-size: 4rem;
+}
+
+.piura-title::before, .piura-title::after {
+  content: "";
+  width: 4rem;
+  height: 3px;
+  background-color: #333;
+}
+
+.piura-title::before {
+  //positioning
 }
 
 .iquitos-pic {
@@ -98,7 +113,8 @@
 }
 
 .dot-piura {
-  //top: 20%;
+  top: 38.25vh;
+  left: 40vw;
   @include laptopMin {
     top: 27%;
     left: 16.5%;
@@ -107,6 +123,8 @@
 }
 
 .dot-iquitos {
+  top: 34.25vh;
+  left: 52vw;
   @include laptopMin {
     right: 38%;
     top: 18%;
@@ -115,6 +133,8 @@
 }
 
 .dot-lima {
+  bottom: 42vh;
+  left: 46.25vw;
   @include laptopMin {
     bottom: 31%;
     left: 40%;
@@ -123,6 +143,8 @@
 }
 
 .dot-cuzco {
+  bottom: 38.25vh;
+  left: 54.25vw;
   @include laptopMin {
     right: 33%;
     bottom: 27.5%;

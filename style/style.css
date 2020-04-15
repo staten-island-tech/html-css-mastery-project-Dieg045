@@ -284,23 +284,16 @@
   position: relative;
 }
 
-.map {
+.map-peru {
   position: absolute;
-  background-image: url(../media/PeruMap.svg);
-  background-size: cover;
-  height: 50%;
   left: 50%;
-  top: 25%;
-  height: auto;
-  width: auto;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 50vh;
+  width: 20.5vw;
 }
 
-/*.map-peru {
-  position: absolute;
-  height: 50vh;
-}*/
 /*.map-peru-image {
   height: 50vh;
   width: 73.5vw;
@@ -309,21 +302,41 @@
     width: auto;
   }
 }*/
+.piura {
+  position: absolute;
+}
+
 .map-pictures {
   position: absolute;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
 }
 
 .piura-pic {
-  height: 20vh;
+  height: 25vh;
+  width: 21vw;
+  top: 10vh;
+  left: 19vw;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
-.piura-text {
+.piura-title {
   position: absolute;
-  padding: 0 .5rem;
-  top: 0;
-  height: 2rem;
+  margin: 0;
+  left: 19vw;
+  top: 44vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   font-family: Rakkas;
-  font-size: 2rem;
+  font-size: 4rem;
+}
+
+.piura-title::before, .piura-title::after {
+  content: "";
+  width: 4rem;
+  height: 3px;
+  background-color: #333;
 }
 
 .iquitos-pic {
@@ -373,11 +386,21 @@
   border-radius: .5rem;
 }
 
+.dot-piura {
+  top: 38.25vh;
+  left: 40vw;
+}
+
 @media (max-width: 900px) {
   .dot-piura {
     top: 27%;
     left: 16.5%;
   }
+}
+
+.dot-iquitos {
+  top: 34.25vh;
+  left: 52vw;
 }
 
 @media (max-width: 900px) {
@@ -387,11 +410,21 @@
   }
 }
 
+.dot-lima {
+  bottom: 42vh;
+  left: 46.25vw;
+}
+
 @media (max-width: 900px) {
   .dot-lima {
     bottom: 31%;
     left: 40%;
   }
+}
+
+.dot-cuzco {
+  bottom: 38.25vh;
+  left: 54.25vw;
 }
 
 @media (max-width: 900px) {
