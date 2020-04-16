@@ -35,16 +35,6 @@
   width: 20.5vw;//ONLY FOR DESKTOP
 }
 
-//use this for the above class
-/*.map-peru-image {
-  height: 50vh;
-  width: 73.5vw;
-  z-index: 2;
-  @include laptop {
-    width: auto;
-  }
-}*/
-
 .map-pictures {
   position: absolute;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
@@ -170,39 +160,144 @@
 
 .lima {
   position: absolute;
-  //visibility: hidden;
-  //opacity: 0;
+  visibility: hidden;
+  opacity: 0;
   transition: all .8s;
 }
 
 .lima-pic {
   height: 25vh;
   width: 26.25vw;
-  top: 65vh;
+  top: 59vh;
   left: 19vw;
   transform: translateX(-50%);
 }
 
+.lima-info {
+  position: absolute;
+  left: 19vw;
+  top: 10vh;
+  height: 40vh;
+  width: 25vw;
+  transform: translateX(-50%);
+}
+
+.lima-title {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: Rakkas;
+  font-size: 4rem;
+}
+
+.lima-title:before, .lima-title:after {
+  content: "";
+  position: absolute;
+  width: 120%;
+  left: -10%;
+  height: 3px;
+  background-color: #333;
+}
+
+.lima-title:before {
+  top: 0;
+}
+
+.lima-title:after {
+  bottom: 0;
+}
+
 .lima-text {
   position: absolute;
-  padding: 0 .5rem;
-  top: 0;
-  height: 2rem;
+  margin: 0;
   font-family: Rakkas;
   font-size: 2rem;
+  text-align: center;
+}
+
+.cuzco {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .8s;
 }
 
 .cuzco-pic {
-  height: 20vh;
+  height: 25vh;
+  width: 22vw;
+  top: 59vh;
+  left: 81vw;
+  transform: translateX(-50%);
+}
+
+.cuzco-info {
+  position: absolute;
+  left: 81vw;
+  top: 10vh;
+  height: 40vh;
+  width: 25vw;
+  transform: translateX(-50%);
+}
+
+.cuzco-title {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: Rakkas;
+  font-size: 4rem;
+}
+
+.cuzco-title:before, .cuzco-title:after {
+  content: "";
+  position: absolute;
+  width: 120%;
+  left: -10%;
+  height: 3px;
+  background-color: #333;
+}
+
+.cuzco-title:before {
+  top: 0;
+}
+
+.cuzco-title:after {
+  bottom: 0;
 }
 
 .cuzco-text {
   position: absolute;
-  padding: .5rem;
-  bottom: 4%;
-  height: 2rem;
+  margin: 0;
   font-family: Rakkas;
   font-size: 2rem;
+  text-align: center;
+}
+
+.click {
+  transition: all .8s;
+}
+
+.click-span {
+  position: absolute;
+  margin: 0;
+  font-family: Rakkas;
+  font-size: 2rem;
+  left: 50%;
+  top: 78vh;
+  transform: translateX(-50%);
+}
+
+.click-eng {
+  position: absolute;
+  margin: 0;
+  font-family: Rakkas;
+  font-size: 1.75rem;
+  left: 50%;
+  top: 81vh;
+  transform: translateX(-50%);
 }
 
 //all dots
@@ -260,9 +355,14 @@
   //animation: limadotFade 40s ease-in infinite;
 }
 
+.cuzco-radio {
+  display: none;
+}
+
 .dot-cuzco {
   bottom: 38.25vh;
   left: 54.25vw;
+  cursor: pointer;
   @include laptopMin {
     right: 33%;
     bottom: 27.5%;
@@ -296,4 +396,27 @@
 .iquitos-radio:checked ~ .iquitos {
   visibility: visible;
   opacity: 1;
+}
+
+.lima-radio:checked ~ .dot-lima {
+  background-color: orange;
+}
+
+.lima-radio:checked ~ .lima {
+  visibility: visible;
+  opacity: 1;
+}
+
+.cuzco-radio:checked ~ .dot-cuzco {
+  background-color: orange;
+}
+
+.cuzco-radio:checked ~ .cuzco {
+  visibility: visible;
+  opacity: 1;
+}
+
+.radio:checked ~ .click {
+  opacity: 0;
+  visibility: hidden;
 }

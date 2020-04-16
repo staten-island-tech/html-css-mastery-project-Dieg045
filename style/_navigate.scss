@@ -81,6 +81,7 @@
   transform: translate(-50%, -50%);
   list-style: none;
   text-align: center;
+  font-family: Rakkas;
   width: 100%;
   padding: 0;
 }
@@ -112,8 +113,8 @@
   top: 6.5rem;
   right: 6.5rem;
   background-image: radial-gradient(
-    rgba(41, 152, 255, 1),
-    rgba(40, 180, 133, 1)
+    rgb(255, 83, 73),
+    rgb(255, 174, 66)
   );
   z-index: 1000;
   transition: transform 0.8s;
@@ -149,7 +150,7 @@
 }
 
 .navigation_checkbox:checked ~ .navigation_background {
-  transform: scale(80);
+  transform: scale(50);
 }
 
 .navigation_checkbox:checked ~ .navigation_nav {
