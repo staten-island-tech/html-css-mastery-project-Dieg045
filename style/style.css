@@ -280,160 +280,6 @@
   line-height: 4vh;
 }
 
-.map-section {
-  position: relative;
-}
-
-.map-peru {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  height: 50vh;
-  width: 20.5vw;
-}
-
-/*.map-peru-image {
-  height: 50vh;
-  width: 73.5vw;
-  z-index: 2;
-  @include laptop {
-    width: auto;
-  }
-}*/
-.piura {
-  position: absolute;
-}
-
-.map-pictures {
-  position: absolute;
-  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-}
-
-.piura-pic {
-  height: 25vh;
-  width: 21vw;
-  top: 10vh;
-  left: 19vw;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.piura-title {
-  position: absolute;
-  margin: 0;
-  left: 19vw;
-  top: 44vh;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  font-family: Rakkas;
-  font-size: 4rem;
-}
-
-.piura-title::before, .piura-title::after {
-  content: "";
-  width: 4rem;
-  height: 3px;
-  background-color: #333;
-}
-
-.iquitos-pic {
-  height: 20vh;
-}
-
-.iquitos-text {
-  position: absolute;
-  padding: 0 .5rem;
-  top: 0;
-  height: 2rem;
-  font-family: Rakkas;
-  font-size: 2rem;
-}
-
-.lima-pic {
-  height: 20vh;
-}
-
-.lima-text {
-  position: absolute;
-  padding: 0 .5rem;
-  top: 0;
-  height: 2rem;
-  font-family: Rakkas;
-  font-size: 2rem;
-}
-
-.cuzco-pic {
-  height: 20vh;
-}
-
-.cuzco-text {
-  position: absolute;
-  padding: .5rem;
-  bottom: 4%;
-  height: 2rem;
-  font-family: Rakkas;
-  font-size: 2rem;
-}
-
-.map-peru-dots {
-  position: absolute;
-  height: 1rem;
-  width: 1rem;
-  background-color: black;
-  border-radius: .5rem;
-}
-
-.dot-piura {
-  top: 38.25vh;
-  left: 40vw;
-}
-
-@media (max-width: 900px) {
-  .dot-piura {
-    top: 27%;
-    left: 16.5%;
-  }
-}
-
-.dot-iquitos {
-  top: 34.25vh;
-  left: 52vw;
-}
-
-@media (max-width: 900px) {
-  .dot-iquitos {
-    right: 38%;
-    top: 18%;
-  }
-}
-
-.dot-lima {
-  bottom: 42vh;
-  left: 46.25vw;
-}
-
-@media (max-width: 900px) {
-  .dot-lima {
-    bottom: 31%;
-    left: 40%;
-  }
-}
-
-.dot-cuzco {
-  bottom: 38.25vh;
-  left: 54.25vw;
-}
-
-@media (max-width: 900px) {
-  .dot-cuzco {
-    right: 33%;
-    bottom: 27.5%;
-  }
-}
-
 @-webkit-keyframes piuraFade {
   0%, 100% {
     opacity: 100%;
@@ -794,6 +640,319 @@
   }
 }
 
+.map-section {
+  position: relative;
+}
+
+.map-title-span {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin: 0;
+  font-family: Rakkas;
+  font-size: 8rem;
+  text-align: center;
+}
+
+.map-title-eng {
+  position: absolute;
+  left: 50%;
+  top: 10rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin: 0;
+  font-family: Rakkas;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.map-peru {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 50vh;
+  width: 20.5vw;
+}
+
+/*.map-peru-image {
+  height: 50vh;
+  width: 73.5vw;
+  z-index: 2;
+  @include laptop {
+    width: auto;
+  }
+}*/
+.map-pictures {
+  position: absolute;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+}
+
+.piura {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all .8s;
+  transition: all .8s;
+}
+
+.piura-pic {
+  height: 25vh;
+  width: 21vw;
+  top: 10vh;
+  left: 19vw;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.piura-info {
+  position: absolute;
+  left: 19vw;
+  top: 44vh;
+  width: 25vw;
+  height: 40vh;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.piura-title {
+  position: absolute;
+  margin: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-family: Rakkas;
+  font-size: 4rem;
+}
+
+.piura-title::before, .piura-title::after {
+  content: "";
+  position: absolute;
+  width: 120%;
+  left: -10%;
+  height: 3px;
+  background-color: #333;
+}
+
+.piura-title::before {
+  top: 0;
+}
+
+.piura-title::after {
+  bottom: 0;
+}
+
+.piura-text {
+  position: absolute;
+  margin: 0;
+  font-family: Rakkas;
+  font-size: 2rem;
+  text-align: center;
+  top: 25%;
+}
+
+.iquitos {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all .8s;
+  transition: all .8s;
+}
+
+.iquitos-pic {
+  height: 25vh;
+  width: 19.75vw;
+  top: 10vh;
+  left: 81vw;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.iquitos-info {
+  position: absolute;
+  left: 81vw;
+  top: 44vh;
+  width: 25vw;
+  height: 40vh;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.iquitos-title {
+  position: absolute;
+  margin: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-family: Rakkas;
+  font-size: 4rem;
+}
+
+.iquitos-title::before, .iquitos-title::after {
+  content: "";
+  position: absolute;
+  width: 120%;
+  left: -10%;
+  height: 3px;
+  background-color: #333;
+}
+
+.iquitos-title::before {
+  top: 0;
+}
+
+.iquitos-title::after {
+  bottom: 0;
+}
+
+.iquitos-text {
+  position: absolute;
+  margin: 0;
+  font-family: Rakkas;
+  font-size: 2rem;
+  text-align: center;
+  top: 25%;
+}
+
+.lima {
+  position: absolute;
+  -webkit-transition: all .8s;
+  transition: all .8s;
+}
+
+.lima-pic {
+  height: 25vh;
+  width: 26.25vw;
+  top: 65vh;
+  left: 19vw;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.lima-text {
+  position: absolute;
+  padding: 0 .5rem;
+  top: 0;
+  height: 2rem;
+  font-family: Rakkas;
+  font-size: 2rem;
+}
+
+.cuzco-pic {
+  height: 20vh;
+}
+
+.cuzco-text {
+  position: absolute;
+  padding: .5rem;
+  bottom: 4%;
+  height: 2rem;
+  font-family: Rakkas;
+  font-size: 2rem;
+}
+
+.map-peru-dots {
+  position: absolute;
+  height: 1rem;
+  width: 1rem;
+  background-color: black;
+  border-radius: .5rem;
+}
+
+.piura-radio {
+  display: none;
+}
+
+.dot-piura {
+  top: 38.25vh;
+  left: 40vw;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .dot-piura {
+    top: 27%;
+    left: 16.5%;
+  }
+}
+
+.iquitos-radio {
+  display: none;
+}
+
+.dot-iquitos {
+  top: 34.25vh;
+  left: 52vw;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .dot-iquitos {
+    right: 38%;
+    top: 18%;
+  }
+}
+
+.lima-radio {
+  display: none;
+}
+
+.dot-lima {
+  bottom: 42vh;
+  left: 46.25vw;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .dot-lima {
+    bottom: 31%;
+    left: 40%;
+  }
+}
+
+.dot-cuzco {
+  bottom: 38.25vh;
+  left: 54.25vw;
+}
+
+@media (max-width: 900px) {
+  .dot-cuzco {
+    right: 33%;
+    bottom: 27.5%;
+  }
+}
+
+.map-peru-dots:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.map-peru-dots:active {
+  -webkit-transform: scale(1.75);
+          transform: scale(1.75);
+}
+
+.piura-radio:checked ~ .dot-piura {
+  background-color: orange;
+}
+
+.piura-radio:checked ~ .piura {
+  visibility: visible;
+  opacity: 1;
+}
+
+.iquitos-radio:checked ~ .dot-iquitos {
+  background-color: orange;
+}
+
+.iquitos-radio:checked ~ .iquitos {
+  visibility: visible;
+  opacity: 1;
+}
+
 .food {
   position: relative;
 }
@@ -1069,6 +1228,7 @@
   font-size: 4vh;
   font-family: Rakkas;
   opacity: 0;
+  visibility: hidden;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
@@ -1091,13 +1251,14 @@
           box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.6);
 }
 
-.gallery-pic:hover ~ .gallery-pic:not(:hover) {
+.gallery:hover .gallery-pic:not(:hover) {
   -webkit-transform: scale(0.7);
           transform: scale(0.7);
   opacity: .4;
 }
 
 .gallery-pic:hover + .sec-four-sent:not(:hover) {
+  visibility: visible;
   opacity: 1;
 }
 
