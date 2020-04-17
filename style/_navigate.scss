@@ -136,7 +136,7 @@
     120deg,
     transparent 0%,
     transparent 50%,
-    white 50%
+    black 50%
   );
   background-size: 240%;
   transition: all 0.4s;
@@ -145,7 +145,7 @@
 .navigation_link:hover,
 .navigation_link:active {
   background-position: 100%;
-  color: rgba(41, 152, 255, 1);
+  color: rgb(255, 205, 41);
   transform: translateX(1rem);
 }
 

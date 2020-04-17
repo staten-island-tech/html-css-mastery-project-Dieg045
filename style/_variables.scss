@@ -33,10 +33,17 @@ $iphone5: 350px;
   }
 }
 
+//commonly used variables
+
 @mixin centerObjects {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@mixin defaultFont {
+  font-family: Rakkas;
+  text-align: center;
 }
 
 //screen size
