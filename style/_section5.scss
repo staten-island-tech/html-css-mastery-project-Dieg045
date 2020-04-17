@@ -1,61 +1,61 @@
 @import "_variables.scss";
 
 .section5 {
-    position: relative;
+  position: relative;
 }
 
 .finale-span {
-    margin: 0;
-    text-align: center;
-    font-family: Rakkas;
-    font-size: 8rem;
+  margin: 0;
+  text-align: center;
+  font-family: Rakkas;
+  font-size: 8rem;
 }
 
 .finale-eng {
-    margin: 0;
-    text-align: center;
-    font-family: Rakkas;
-    font-size: 3rem;
+  margin: 0;
+  text-align: center;
+  font-family: Rakkas;
+  font-size: 3rem;
 }
 
 .finale-imgs {
-    position: relative;
-    top: 10vh;
-    left: 5vw;
-    width: 90vw;
-    height: 50vh;
-    display: flex;
-    justify-content: space-between;
+  position: relative;
+  top: 10vh;
+  left: 5vw;
+  width: 90vw;
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
 }
 
 .nazca-bird {
-    height: 100%;
-    width: 30%;
+  height: 100%;
+  width: 30%;
 }
 
 .nazca-monkey {
-    height: 100%;
-    width: 30%;
+  height: 100%;
+  width: 30%;
 }
 
 .peru-logo {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .peru-logo-pic {
-    height: 100%;
-    border-radius: 50%;
+  height: 100%;
+  border-radius: 50%;
 }
 
 .peru-logo:hover {
-    transition: all .2s;
-    transform: scale(1.25);
+  transition: all 0.2s;
+  transform: scale(1.25);
 }
 
 .yay {
-    position: absolute;
-    margin: 0;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
+  position: absolute;
+  margin: 0;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
 }

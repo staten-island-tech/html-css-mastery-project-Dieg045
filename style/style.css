@@ -145,8 +145,8 @@
 }
 
 .navigation_checkbox:checked ~ .navigation_background {
-  -webkit-transform: scale(50);
-          transform: scale(50);
+  -webkit-transform: scale(40);
+          transform: scale(40);
 }
 
 .navigation_checkbox:checked ~ .navigation_nav {
@@ -162,10 +162,6 @@
   background-attachment: fixed;
 }
 
-/*.intro-background {
-  height: 100vh;
-  width: 99vw;
-}*/
 .welcome {
   position: relative;
   margin: 0;
@@ -1757,8 +1753,8 @@
 }
 
 .peru-logo:hover {
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   -webkit-transform: scale(1.25);
           transform: scale(1.25);
 }
