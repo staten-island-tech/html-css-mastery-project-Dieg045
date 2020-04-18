@@ -5,25 +5,35 @@
   position: relative;
 }
 
-.map-title-span {
+.titles {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
   margin: 0;
   font-family: Rakkas;
-  font-size: 8rem;
   text-align: center;
+  transform: translateX(-50%);
 }
 
-.map-title-eng {
-  position: absolute;
-  left: 50%;
+.map-title-span, .map-title-eng {
+  @include laptopMin {
+    display: none;
+  }
+}
+
+.map-title-span, .phone-title-span {
+  font-size: 8rem;
+  @include laptopMin {
+    font-size: 4rem;
+    width: 100%;
+  }
+}
+
+.map-title-eng, .phone-title-eng {
   top: 10rem;
-  transform: translateX(-50%);
-  margin: 0;
-  font-family: Rakkas;
   font-size: 2rem;
-  text-align: center;
+  @include laptopMin {
+    top: 5rem;
+  }
 }
 
 .map-peru {
@@ -32,7 +42,10 @@
   top: 50%;
   transform: translate(-50%, -50%);
   height: 50vh;
-  width: 20.5vw;//ONLY FOR DESKTOP
+  width: 20.5vw;
+  @include laptopMin {
+    display: none;
+  }
 }
 
 .map-pictures {
@@ -40,11 +53,23 @@
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
 }
 
+.place-text {
+  position: absolute;
+  margin: 0;
+  font-family: Rakkas;
+  font-size: 2rem;
+  text-align: center;
+}
+
+//specific places
+
 .piura {
   position: absolute;
-  visibility: hidden;
-  opacity: 0;
   transition: all .8s;
+  @include laptop {
+    visibility: hidden;
+    opacity: 0;
+  }
 }
 
 .piura-pic {
@@ -52,6 +77,10 @@
   width: 21vw;
   top: 10vh;
   left: 19vw;
+  @include laptopMin {
+    left: 50vw;
+    width: 75vw;
+  }
   transform: translateX(-50%);
 }
 
@@ -61,6 +90,10 @@
   top: 44vh;
   width: 25vw;
   height: 40vh;
+  @include laptopMin {
+    left: 50vw;
+    width: 75vw;
+  }
   transform: translateX(-50%);
 }
 
@@ -90,12 +123,7 @@
   bottom: 0;
 }
 
-.piura-text {
-  position: absolute;
-  margin: 0;
-  font-family: Rakkas;
-  font-size: 2rem;
-  text-align: center;
+.piura-text, .iquitos-text {
   top: 25%;
 }
 
@@ -149,15 +177,6 @@
   bottom: 0;
 }
 
-.iquitos-text {
-  position: absolute;
-  margin: 0;
-  font-family: Rakkas;
-  font-size: 2rem;
-  text-align: center;
-  top: 25%;
-}
-
 .lima {
   position: absolute;
   visibility: hidden;
@@ -207,14 +226,6 @@
 
 .lima-title:after {
   bottom: 0;
-}
-
-.lima-text {
-  position: absolute;
-  margin: 0;
-  font-family: Rakkas;
-  font-size: 2rem;
-  text-align: center;
 }
 
 .cuzco {
@@ -268,36 +279,26 @@
   bottom: 0;
 }
 
-.cuzco-text {
+.click {
+  transition: all .8s;
   position: absolute;
   margin: 0;
   font-family: Rakkas;
-  font-size: 2rem;
-  text-align: center;
-}
-
-.click {
-  transition: all .8s;
+  left: 50%;
+  transform: translateX(-50%);
+  @include laptopMin {
+    display: none;
+  }
 }
 
 .click-span {
-  position: absolute;
-  margin: 0;
-  font-family: Rakkas;
   font-size: 2rem;
-  left: 50%;
   top: 78vh;
-  transform: translateX(-50%);
 }
 
 .click-eng {
-  position: absolute;
-  margin: 0;
-  font-family: Rakkas;
   font-size: 1.75rem;
-  left: 50%;
   top: 81vh;
-  transform: translateX(-50%);
 }
 
 //all dots
@@ -308,64 +309,44 @@
   width: 1rem;
   background-color: black;
   border-radius: .5rem;
+  cursor: pointer;
+  @include laptopMin {
+    display: none;
+  }
 }
 
-.piura-radio {
+.radio {
   display: none;
 }
 
 .dot-piura {
   top: 38.25vh;
   left: 40vw;
-  cursor: pointer;
   @include laptopMin {
-    top: 27%;
-    left: 16.5%;
   //animation: piuradotFade 40s ease-in infinite;
   }
-}
-
-.iquitos-radio {
-  display: none;
 }
 
 .dot-iquitos {
   top: 34.25vh;
   left: 52vw;
-  cursor: pointer;
   @include laptopMin {
-    right: 38%;
-    top: 18%;
   }
   //animation: iquitosdotFade 40s ease-in infinite;
-}
-
-.lima-radio {
-  display: none;
 }
 
 .dot-lima {
   bottom: 42vh;
   left: 46.25vw;
-  cursor: pointer;
   @include laptopMin {
-    bottom: 31%;
-    left: 40%;
   }
   //animation: limadotFade 40s ease-in infinite;
-}
-
-.cuzco-radio {
-  display: none;
 }
 
 .dot-cuzco {
   bottom: 38.25vh;
   left: 54.25vw;
-  cursor: pointer;
   @include laptopMin {
-    right: 33%;
-    bottom: 27.5%;
   }
   //animation: cuzcodotFade 40s ease-in infinite;
 }

@@ -1,5 +1,11 @@
 @import "_variables.scss";
 
+.navigation {
+  @include laptopMin {
+    display: none;
+  }
+}
+
 .navigation_checkbox {
   display: none;
 }
