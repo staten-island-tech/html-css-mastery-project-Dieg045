@@ -2,36 +2,82 @@
 
 .cuzco {
   position: absolute;
-  visibility: hidden;
-  opacity: 0;
   transition: all 0.8s;
+  @include laptop {
+    visibility: hidden;
+    opacity: 0;
+  }
+  @include laptopMin {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5vh 0;
+  }
 }
 
-.cuzco-pic {
+.cuzco-checkbox {
+  display: none;
+}
+
+.cuzco-pic-parent {
+  @include laptopMin {
+    position: relative;
+    cursor: pointer;
+  }
+}
+
+#cuzco-pic {
   height: 25vh;
   width: 22vw;
   top: 59vh;
   left: 81vw;
   transform: translateX(-50%);
+  @include laptopMin {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: translateX(0);
+    width: 75vw;
+  }
 }
 
 .cuzco-info {
   position: absolute;
-  left: 81vw;
-  top: 10vh;
-  height: 40vh;
   width: 25vw;
-  transform: translateX(-50%);
+  height: 40vh;
+  @include laptopMin {
+    display: none;
+    position: relative;
+    width: 75vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 3vh 0 0;
+    opacity: 0;
+    height: 0;
+  }
+  @include laptop {
+    left: 81vw;
+    top: 10vh;
+    transform: translateX(-50%);
+  }
 }
 
 .cuzco-title {
   position: absolute;
   bottom: 0;
   margin: 0;
-  left: 50%;
-  transform: translateX(-50%);
   font-family: Rakkas;
   font-size: 4rem;
+  @include laptopMin {
+    position: relative;
+  }
+  @include laptop {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .cuzco-title:before,
@@ -59,7 +105,7 @@
   left: 54.25vw;
 }
 
-//hover effects and others
+//hover effects and others (computer)
 
 .cuzco-radio:checked ~ .dot-cuzco {
   background-color: orange;
@@ -68,4 +114,14 @@
 .cuzco-radio:checked ~ .cuzco {
   visibility: visible;
   opacity: 1;
+}
+
+//hover effects and others (mobile)
+
+.cuzco-checkbox:checked ~ .cuzco-info {
+  @include laptopMin {
+    display: block;
+    opacity: 1;
+    height: auto;
+  }
 }

@@ -7,32 +7,76 @@
     visibility: hidden;
     opacity: 0;
   }
+  @include laptopMin {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5vh 0;
+  }
 }
 
-.iquitos-pic {
+.iquitos-checkbox {
+  display: none;
+}
+
+.iquitos-pic-parent {
+  @include laptopMin {
+    position: relative;
+    cursor: pointer;
+  }
+}
+
+#iquitos-pic {
   height: 25vh;
   width: 19.75vw;
   top: 10vh;
   left: 81vw;
   transform: translateX(-50%);
+  @include laptopMin {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: translateX(0);
+    width: 75vw;
+  }
 }
 
 .iquitos-info {
   position: absolute;
-  left: 81vw;
-  top: 44vh;
   width: 25vw;
   height: 40vh;
-  transform: translateX(-50%);
+  @include laptopMin {
+    display: none;
+    position: relative;
+    width: 75vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 3vh 0 0;
+    opacity: 0;
+    height: 0;
+  }
+  @include laptop {
+    left: 81vw;
+    top: 44vh;
+    transform: translateX(-50%);
+  }
 }
 
 .iquitos-title {
   position: absolute;
   margin: 0;
-  left: 50%;
-  transform: translateX(-50%);
   font-family: Rakkas;
   font-size: 4rem;
+  @include laptopMin {
+    position: relative;
+  }
+  @include laptop {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .iquitos-title::before,
@@ -60,7 +104,7 @@
   left: 52vw;
 }
 
-//hover effects and others
+//hover effects and others (computer)
 
 .iquitos-radio:checked ~ .dot-iquitos {
   background-color: orange;
@@ -69,4 +113,14 @@
 .iquitos-radio:checked ~ .iquitos {
   visibility: visible;
   opacity: 1;
+}
+
+//hover effects and others (mobile)
+
+.iquitos-checkbox:checked ~ .iquitos-info {
+  @include laptopMin {
+    display: block;
+    opacity: 1;
+    height: auto;
+  }
 }

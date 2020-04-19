@@ -7,6 +7,11 @@
 
 .map-section {
   position: relative;
+  @include laptopMin {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
 }
 
 .titles {
