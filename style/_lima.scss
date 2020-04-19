@@ -1,0 +1,71 @@
+@import "_variables.scss";
+
+.lima {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.lima-pic {
+  height: 25vh;
+  width: 26.25vw;
+  top: 59vh;
+  left: 19vw;
+  transform: translateX(-50%);
+}
+
+.lima-info {
+  position: absolute;
+  left: 19vw;
+  top: 10vh;
+  height: 40vh;
+  width: 25vw;
+  transform: translateX(-50%);
+}
+
+.lima-title {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: Rakkas;
+  font-size: 4rem;
+}
+
+.lima-title:before,
+.lima-title:after {
+  content: "";
+  position: absolute;
+  width: 120%;
+  left: -10%;
+  height: 3px;
+  background-color: #333;
+}
+
+.lima-title:before {
+  top: 0;
+}
+
+.lima-title:after {
+  bottom: 0;
+}
+
+//dot
+
+.dot-lima {
+  bottom: 42vh;
+  left: 46.25vw;
+}
+
+//hover effects and others
+
+.lima-radio:checked ~ .dot-lima {
+  background-color: orange;
+}
+
+.lima-radio:checked ~ .lima {
+  visibility: visible;
+  opacity: 1;
+}

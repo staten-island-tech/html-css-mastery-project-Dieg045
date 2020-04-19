@@ -1,5 +1,9 @@
 @import "_variables.scss";
 @import "_animations.scss";
+@import "_piura.scss";
+@import "_iquitos.scss";
+@import "_lima.scss";
+@import "_cuzco.scss";
 
 .map-section {
   position: relative;
@@ -14,26 +18,38 @@
   transform: translateX(-50%);
 }
 
-.map-title-span, .map-title-eng {
+.map-title-span,
+.map-title-eng {
   @include laptopMin {
     display: none;
   }
 }
 
-.map-title-span, .phone-title-span {
-  font-size: 8rem;
-  @include laptopMin {
-    font-size: 4rem;
-    width: 100%;
+.phone-title-span,
+.phone-title-eng {
+  @include laptop {
+    display: none;
   }
 }
 
-.map-title-eng, .phone-title-eng {
+.map-title-span {
+  font-size: 8rem;
+}
+
+.phone-title-span {
+  position: relative;
+  font-size: 4rem;
+  width: 100%;
+}
+
+.map-title-eng {
   top: 10rem;
   font-size: 2rem;
-  @include laptopMin {
-    top: 5rem;
-  }
+}
+
+.phone-title-eng {
+  position: relative;
+  //top: 5rem;
 }
 
 .map-peru {
@@ -59,228 +75,24 @@
   font-family: Rakkas;
   font-size: 2rem;
   text-align: center;
+  @include laptopMin {
+    position: relative;
+  }
 }
 
 //specific places
 
-.piura {
-  position: absolute;
-  transition: all .8s;
-  @include laptop {
-    visibility: hidden;
-    opacity: 0;
-  }
-}
-
-.piura-pic {
-  height: 25vh;
-  width: 21vw;
-  top: 10vh;
-  left: 19vw;
-  @include laptopMin {
-    left: 50vw;
-    width: 75vw;
-  }
-  transform: translateX(-50%);
-}
-
-.piura-info {
-  position: absolute;
-  left: 19vw;
-  top: 44vh;
-  width: 25vw;
-  height: 40vh;
-  @include laptopMin {
-    left: 50vw;
-    width: 75vw;
-  }
-  transform: translateX(-50%);
-}
-
-.piura-title {
-  position: absolute;
-  margin: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: Rakkas;
-  font-size: 4rem;
-}
-
-.piura-title::before, .piura-title::after {
-  content: "";
-  position: absolute;
-  width: 120%;
-  left: -10%;
-  height: 3px;
-  background-color: #333;
-}
-
-.piura-title::before {
-  top: 0;
-}
-
-.piura-title::after {
-  bottom: 0;
-}
-
-.piura-text, .iquitos-text {
+.piura-text,
+.iquitos-text {
   top: 25%;
-}
-
-.iquitos {
-  position: absolute;
-  visibility: hidden;
-  opacity: 0;
-  transition: all .8s;
-}
-
-.iquitos-pic {
-  height: 25vh;
-  width: 19.75vw;
-  top: 10vh;
-  left: 81vw;
-  transform: translateX(-50%);
-}
-
-.iquitos-info {
-  position: absolute;
-  left: 81vw;
-  top: 44vh;
-  width: 25vw;
-  height: 40vh;
-  transform: translateX(-50%);
-}
-
-.iquitos-title {
-  position: absolute;
-  margin: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: Rakkas;
-  font-size: 4rem;
-}
-
-.iquitos-title::before, .iquitos-title::after {
-  content: "";
-  position: absolute;
-  width: 120%;
-  left: -10%;
-  height: 3px;
-  background-color: #333;
-}
-
-.iquitos-title::before {
-  top: 0;
-}
-
-.iquitos-title::after {
-  bottom: 0;
-}
-
-.lima {
-  position: absolute;
-  visibility: hidden;
-  opacity: 0;
-  transition: all .8s;
-}
-
-.lima-pic {
-  height: 25vh;
-  width: 26.25vw;
-  top: 59vh;
-  left: 19vw;
-  transform: translateX(-50%);
-}
-
-.lima-info {
-  position: absolute;
-  left: 19vw;
-  top: 10vh;
-  height: 40vh;
-  width: 25vw;
-  transform: translateX(-50%);
-}
-
-.lima-title {
-  position: absolute;
-  bottom: 0;
-  margin: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: Rakkas;
-  font-size: 4rem;
-}
-
-.lima-title:before, .lima-title:after {
-  content: "";
-  position: absolute;
-  width: 120%;
-  left: -10%;
-  height: 3px;
-  background-color: #333;
-}
-
-.lima-title:before {
-  top: 0;
-}
-
-.lima-title:after {
-  bottom: 0;
-}
-
-.cuzco {
-  position: absolute;
-  visibility: hidden;
-  opacity: 0;
-  transition: all .8s;
-}
-
-.cuzco-pic {
-  height: 25vh;
-  width: 22vw;
-  top: 59vh;
-  left: 81vw;
-  transform: translateX(-50%);
-}
-
-.cuzco-info {
-  position: absolute;
-  left: 81vw;
-  top: 10vh;
-  height: 40vh;
-  width: 25vw;
-  transform: translateX(-50%);
-}
-
-.cuzco-title {
-  position: absolute;
-  bottom: 0;
-  margin: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: Rakkas;
-  font-size: 4rem;
-}
-
-.cuzco-title:before, .cuzco-title:after {
-  content: "";
-  position: absolute;
-  width: 120%;
-  left: -10%;
-  height: 3px;
-  background-color: #333;
-}
-
-.cuzco-title:before {
-  top: 0;
-}
-
-.cuzco-title:after {
-  bottom: 0;
+  @include laptopMin {
+    top: 0;
+    margin: 3vh 0;
+  }
 }
 
 .click {
-  transition: all .8s;
+  transition: all 0.8s;
   position: absolute;
   margin: 0;
   font-family: Rakkas;
@@ -308,7 +120,7 @@
   height: 1rem;
   width: 1rem;
   background-color: black;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   cursor: pointer;
   @include laptopMin {
     display: none;
@@ -319,38 +131,6 @@
   display: none;
 }
 
-.dot-piura {
-  top: 38.25vh;
-  left: 40vw;
-  @include laptopMin {
-  //animation: piuradotFade 40s ease-in infinite;
-  }
-}
-
-.dot-iquitos {
-  top: 34.25vh;
-  left: 52vw;
-  @include laptopMin {
-  }
-  //animation: iquitosdotFade 40s ease-in infinite;
-}
-
-.dot-lima {
-  bottom: 42vh;
-  left: 46.25vw;
-  @include laptopMin {
-  }
-  //animation: limadotFade 40s ease-in infinite;
-}
-
-.dot-cuzco {
-  bottom: 38.25vh;
-  left: 54.25vw;
-  @include laptopMin {
-  }
-  //animation: cuzcodotFade 40s ease-in infinite;
-}
-
 //all hover effects and others
 
 .map-peru-dots:hover {
@@ -359,42 +139,6 @@
 
 .map-peru-dots:active {
   transform: scale(1.75);
-}
-
-.piura-radio:checked ~ .dot-piura {
-  background-color: orange;
-}
-
-.piura-radio:checked ~ .piura {
-  visibility: visible;
-  opacity: 1;
-}
-
-.iquitos-radio:checked ~ .dot-iquitos {
-  background-color: orange;
-}
-
-.iquitos-radio:checked ~ .iquitos {
-  visibility: visible;
-  opacity: 1;
-}
-
-.lima-radio:checked ~ .dot-lima {
-  background-color: orange;
-}
-
-.lima-radio:checked ~ .lima {
-  visibility: visible;
-  opacity: 1;
-}
-
-.cuzco-radio:checked ~ .dot-cuzco {
-  background-color: orange;
-}
-
-.cuzco-radio:checked ~ .cuzco {
-  visibility: visible;
-  opacity: 1;
 }
 
 .radio:checked ~ .click {

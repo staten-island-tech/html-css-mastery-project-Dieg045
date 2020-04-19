@@ -978,31 +978,36 @@
 }
 
 @media (max-width: 1024px) {
-  .map-title-span, .map-title-eng {
+  .map-title-span,
+  .map-title-eng {
     display: none;
   }
 }
 
-.map-title-span, .phone-title-span {
-  font-size: 8rem;
-}
-
-@media (max-width: 1024px) {
-  .map-title-span, .phone-title-span {
-    font-size: 4rem;
-    width: 100%;
+@media (min-width: 1024px) {
+  .phone-title-span,
+  .phone-title-eng {
+    display: none;
   }
 }
 
-.map-title-eng, .phone-title-eng {
+.map-title-span {
+  font-size: 8rem;
+}
+
+.phone-title-span {
+  position: relative;
+  font-size: 4rem;
+  width: 100%;
+}
+
+.map-title-eng {
   top: 10rem;
   font-size: 2rem;
 }
 
-@media (max-width: 1024px) {
-  .map-title-eng, .phone-title-eng {
-    top: 5rem;
-  }
+.phone-title-eng {
+  position: relative;
 }
 
 .map-peru {
@@ -1035,16 +1040,56 @@
   text-align: center;
 }
 
+@media (max-width: 1024px) {
+  .place-text {
+    position: relative;
+  }
+}
+
 .piura {
   position: absolute;
-  -webkit-transition: all .8s;
-  transition: all .8s;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
 }
 
 @media (min-width: 1024px) {
   .piura {
     visibility: hidden;
     opacity: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .piura {
+    position: relative;
+    height: 80vh;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 5vh 0;
+  }
+}
+
+.piura-checkbox {
+  display: none;
+}
+
+.piura-pic-parent {
+  position: absolute;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .piura-pic-parent {
+    display: none;
   }
 }
 
@@ -1059,7 +1104,11 @@
 
 @media (max-width: 1024px) {
   .piura-pic {
-    left: 50vw;
+    position: relative;
+    left: 0;
+    top: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     width: 75vw;
   }
 }
@@ -1076,8 +1125,22 @@
 
 @media (max-width: 1024px) {
   .piura-info {
-    left: 50vw;
+    position: relative;
+    left: 0;
+    top: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     width: 75vw;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 3vh 0;
+    height: auto;
   }
 }
 
@@ -1091,7 +1154,17 @@
   font-size: 4rem;
 }
 
-.piura-title::before, .piura-title::after {
+@media (max-width: 1024px) {
+  .piura-title {
+    position: relative;
+    left: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.piura-title::before,
+.piura-title::after {
   content: "";
   position: absolute;
   width: 120%;
@@ -1108,16 +1181,30 @@
   bottom: 0;
 }
 
-.piura-text, .iquitos-text {
+.piura-text,
+.iquitos-text {
   top: 25%;
+}
+
+@media (max-width: 1024px) {
+  .piura-text,
+  .iquitos-text {
+    top: 0;
+    margin: 3vh 0;
+  }
 }
 
 .iquitos {
   position: absolute;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: all .8s;
-  transition: all .8s;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+@media (min-width: 1024px) {
+  .iquitos {
+    visibility: hidden;
+    opacity: 0;
+  }
 }
 
 .iquitos-pic {
@@ -1149,7 +1236,8 @@
   font-size: 4rem;
 }
 
-.iquitos-title::before, .iquitos-title::after {
+.iquitos-title::before,
+.iquitos-title::after {
   content: "";
   position: absolute;
   width: 120%;
@@ -1170,8 +1258,8 @@
   position: absolute;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: all .8s;
-  transition: all .8s;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
 }
 
 .lima-pic {
@@ -1204,7 +1292,8 @@
   font-size: 4rem;
 }
 
-.lima-title:before, .lima-title:after {
+.lima-title:before,
+.lima-title:after {
   content: "";
   position: absolute;
   width: 120%;
@@ -1225,8 +1314,8 @@
   position: absolute;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: all .8s;
-  transition: all .8s;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
 }
 
 .cuzco-pic {
@@ -1259,7 +1348,8 @@
   font-size: 4rem;
 }
 
-.cuzco-title:before, .cuzco-title:after {
+.cuzco-title:before,
+.cuzco-title:after {
   content: "";
   position: absolute;
   width: 120%;
@@ -1277,8 +1367,8 @@
 }
 
 .click {
-  -webkit-transition: all .8s;
-  transition: all .8s;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
   position: absolute;
   margin: 0;
   font-family: Rakkas;
@@ -1308,7 +1398,7 @@
   height: 1rem;
   width: 1rem;
   background-color: black;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   cursor: pointer;
 }
 

@@ -1,0 +1,72 @@
+@import "_variables.scss";
+
+.iquitos {
+  position: absolute;
+  transition: all 0.8s;
+  @include laptop {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.iquitos-pic {
+  height: 25vh;
+  width: 19.75vw;
+  top: 10vh;
+  left: 81vw;
+  transform: translateX(-50%);
+}
+
+.iquitos-info {
+  position: absolute;
+  left: 81vw;
+  top: 44vh;
+  width: 25vw;
+  height: 40vh;
+  transform: translateX(-50%);
+}
+
+.iquitos-title {
+  position: absolute;
+  margin: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: Rakkas;
+  font-size: 4rem;
+}
+
+.iquitos-title::before,
+.iquitos-title::after {
+  content: "";
+  position: absolute;
+  width: 120%;
+  left: -10%;
+  height: 3px;
+  background-color: #333;
+}
+
+.iquitos-title::before {
+  top: 0;
+}
+
+.iquitos-title::after {
+  bottom: 0;
+}
+
+//dot
+
+.dot-iquitos {
+  top: 34.25vh;
+  left: 52vw;
+}
+
+//hover effects and others
+
+.iquitos-radio:checked ~ .dot-iquitos {
+  background-color: orange;
+}
+
+.iquitos-radio:checked ~ .iquitos {
+  visibility: visible;
+  opacity: 1;
+}

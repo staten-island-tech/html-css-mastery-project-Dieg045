@@ -1,0 +1,71 @@
+@import "_variables.scss";
+
+.cuzco {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.cuzco-pic {
+  height: 25vh;
+  width: 22vw;
+  top: 59vh;
+  left: 81vw;
+  transform: translateX(-50%);
+}
+
+.cuzco-info {
+  position: absolute;
+  left: 81vw;
+  top: 10vh;
+  height: 40vh;
+  width: 25vw;
+  transform: translateX(-50%);
+}
+
+.cuzco-title {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: Rakkas;
+  font-size: 4rem;
+}
+
+.cuzco-title:before,
+.cuzco-title:after {
+  content: "";
+  position: absolute;
+  width: 120%;
+  left: -10%;
+  height: 3px;
+  background-color: #333;
+}
+
+.cuzco-title:before {
+  top: 0;
+}
+
+.cuzco-title:after {
+  bottom: 0;
+}
+
+//dot
+
+.dot-cuzco {
+  bottom: 38.25vh;
+  left: 54.25vw;
+}
+
+//hover effects and others
+
+.cuzco-radio:checked ~ .dot-cuzco {
+  background-color: orange;
+}
+
+.cuzco-radio:checked ~ .cuzco {
+  visibility: visible;
+  opacity: 1;
+}

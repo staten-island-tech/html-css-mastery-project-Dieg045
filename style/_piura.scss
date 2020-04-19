@@ -1,0 +1,119 @@
+@import "_variables.scss";
+
+.piura {
+    position: absolute;
+    transition: all 0.8s;
+    @include laptop {
+      visibility: hidden;
+      opacity: 0;
+    }
+    @include laptopMin {
+      position: relative;
+      height: 80vh;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 5vh 0;
+    }
+}
+  
+.piura-checkbox {
+    display: none;
+}
+  
+.piura-pic-parent {
+    @include laptop {
+      display: none;
+    }
+    position: absolute;
+    cursor: pointer;
+}
+  
+  .piura-pic {
+    height: 25vh;
+    width: 21vw;
+    top: 10vh;
+    left: 19vw;
+    transform: translateX(-50%);
+    @include laptopMin {
+      position: relative;
+      left: 0;
+      top: 0;
+      transform: translateX(0);
+      //left: 50vw;
+      width: 75vw;
+    }
+  }
+  
+  .piura-info {
+    position: absolute;
+    left: 19vw;
+    top: 44vh;
+    width: 25vw;
+    height: 40vh;
+    transform: translateX(-50%);
+    @include laptopMin {
+      position: relative;
+      left: 0;
+      top: 0;
+      transform: translateX(0);
+      //left: 50vw;
+      width: 75vw;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      margin: 3vh 0;
+      height: auto;
+    }
+  }
+  
+  .piura-title {
+    position: absolute;
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Rakkas;
+    font-size: 4rem;
+    @include laptopMin {
+      position: relative;
+      left: 0;
+      transform: translateX(0);
+    }
+  }
+  
+  .piura-title::before,
+  .piura-title::after {
+    content: "";
+    position: absolute;
+    width: 120%;
+    left: -10%;
+    height: 3px;
+    background-color: #333;
+  }
+  
+  .piura-title::before {
+    top: 0;
+  }
+  
+  .piura-title::after {
+    bottom: 0;
+  }
+
+  //dot
+
+  .dot-piura {
+  top: 38.25vh;
+  left: 40vw;
+}
+
+//hover effects and others
+
+.piura-radio:checked ~ .dot-piura {
+  background-color: orange;
+}
+
+.piura-radio:checked ~ .piura {
+  visibility: visible;
+  opacity: 1;
+}
