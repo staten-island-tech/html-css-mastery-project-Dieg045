@@ -10,7 +10,6 @@
 
 .food-intro {
   margin: 0;
-  height: 16%;
   @include centerObjects;
   font-family: Rakkas;
   font-size: 3rem;
@@ -19,6 +18,7 @@
   }
   @include laptop {
     font-size: 10rem;
+    height: 16%;
   }
 }
 
@@ -31,19 +31,15 @@
 
 .food-collection {
   position: relative;
-  width: 80%;
   height: 80%;
   margin: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
-  display: flex;
-  justify-content: space-between;
+  display: flex;//width 100% if this messes up
+  justify-content: space-around;
   align-items: center;
-  flex-direction: column;
-  @include laptop {
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
+  @include laptopMin {
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 3vh 0 0;
   }
 }
 
@@ -57,6 +53,10 @@
     width: 28%;
     height: 50%;
     perspective: 150rem;
+  }
+  @include laptopMin {
+    height: 30%;
+    width: 85%;
   }
 }
 

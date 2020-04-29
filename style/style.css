@@ -1415,7 +1415,6 @@
 
 .food-intro {
   margin: 0;
-  height: 16%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1438,6 +1437,7 @@
 @media (min-width: 1024px) {
   .food-intro {
     font-size: 10rem;
+    height: 16%;
   }
 }
 
@@ -1450,36 +1450,28 @@
 
 .food-collection {
   position: relative;
-  width: 80%;
   height: 80%;
   margin: 0;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   .food-collection {
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    width: 100%;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 3vh 0 0;
   }
 }
 
@@ -1498,6 +1490,13 @@
     height: 50%;
     -webkit-perspective: 150rem;
             perspective: 150rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card {
+    height: 30%;
+    width: 85%;
   }
 }
 
