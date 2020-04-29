@@ -9,6 +9,9 @@
   text-align: center;
   font-family: Rakkas;
   font-size: 8rem;
+  @include laptopMin {
+    font-size: 4rem;
+  }
 }
 
 .finale-eng {
@@ -16,6 +19,9 @@
   text-align: center;
   font-family: Rakkas;
   font-size: 3rem;
+  @include laptopMin {
+    font-size: 2rem;
+  }
 }
 
 .finale-imgs {
@@ -26,6 +32,12 @@
   height: 50vh;
   display: flex;
   justify-content: space-between;
+}
+
+.nazca {
+  @include laptopMin {
+    display: none;
+  }
 }
 
 .nazca-bird {
@@ -45,6 +57,9 @@
 .peru-logo-pic {
   height: 100%;
   border-radius: 50%;
+  @include laptopMin {
+    width: 100%;
+  }
 }
 
 .peru-logo:hover {

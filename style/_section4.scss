@@ -2,6 +2,11 @@
 
 .section4 {
   position: relative;
+  @include laptopMin {
+    display: flex;
+    flex-direction: column;
+    height: 110vh;
+  }
 }
 
 .section4-header {
@@ -10,6 +15,9 @@
   text-align: center;
   font-family: Rakkas;
   font-size: 10rem;
+  @include laptopMin {
+    font-size: 3rem;
+  }
 }
 
 .section4-header-english {
@@ -19,58 +27,72 @@
   font-size: 2rem;
 }
 
+.gallery {
+  @include laptopMin {
+    position: relative;
+    margin: 3vh 0 0;
+    height: 92vh;
+  }
+}
+
 .gallery-pic {
   position: absolute;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
   outline-offset: 1rem;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .gallerypic1 {
-  top: 22vh;
-  left: 14vw;
-  width: 57vw;
   @include laptopMin {
-    //animation: pic1Fade 40s ease-in infinite;
+    animation: pic1Fade 40s ease-in infinite;
+    width: 80%;
+    left: 10%;
   }
   @include laptop {
     width: 18vw;
+    top: 22vh;
+    left: 14vw;
   }
 }
 
 .gallerypic2 {
-  top: 31vh;
   left: 27vw;
-  width: 57vw;
   @include laptopMin {
-    //animation: pic2Fade 40s ease-in infinite;
+    animation: pic2Fade 40s ease-in infinite;
+    width: 80%;
+    left: 10%;
+    top: 10vw;
   }
   @include laptop {
     width: 25vw;
+    top: 31vh;
   }
 }
 
 .gallerypic3 {
-  top: 44vh;
   left: 18vw;
-  //width: 57vw;
   @include laptopMin {
-  //  animation: pic3Fade 40s ease-in infinite;
+    animation: pic3Fade 40s ease-in infinite;
+    width: 80%;
+    left: 10%;
   }
   @include laptop {
     width: 16vw;
+    top: 44vh;
   }
 }
 
 .gallerypic4 {
-  top: 47vh;
   left: 30vw;
-  //width: 57vw;
   @include laptopMin {
-    //animation: pic4Fade 40s ease-in infinite;
+    animation: pic4Fade 40s ease-in infinite;
+    width: 80%;
+    left: 10%;
+    top: 10vw;
   }
   @include laptop {
     width: 25vw;
+    top: 47vh;
   }
 }
 
@@ -85,6 +107,42 @@
   opacity: 0;
   visibility: hidden;
   transition: all 0.2s;
+  @include laptopMin {
+    width: 80%;
+    left: 10%;
+    top: 50vh;
+    opacity: 1;
+    visibility: visible;
+    text-align: center;
+  }
+}
+
+.sent1 {
+  @include laptopMin {
+    top: 118vw;
+    animation: pic1Fade 40s ease-in infinite;
+  }
+}
+
+.sent2 {
+  @include laptopMin {
+    top: 80vw;
+    animation: pic2Fade 40s ease-in infinite;
+  }
+}
+
+.sent3 {
+  @include laptopMin {
+    top: 120vw;
+    animation: pic3Fade 40s ease-in infinite;
+  }
+}
+
+.sent4 {
+  @include laptopMin {
+    top: 70vw;
+    animation: pic4Fade 40s ease-in infinite;
+  }
 }
 
 .spanish-sent {
@@ -107,7 +165,7 @@
 
 .gallery:hover .gallery-pic:not(:hover) {
   transform: scale(0.7);
-  opacity: .4;
+  opacity: 0.4;
 }
 
 .gallery-pic:hover + .sec-four-sent:not(:hover) {

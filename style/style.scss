@@ -17,6 +17,9 @@ body {
   width: 100%;
   height: 500%;
   margin: 0;
+  @include laptopMin {
+    height: 600%;
+  }
 }
 
 section {
