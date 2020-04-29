@@ -44,6 +44,7 @@
 
 .gallerypic1 {
   @include laptopMin {
+    -webkit-animation: pic1Fade 40s ease-in infinite;
     animation: pic1Fade 40s ease-in infinite;
     width: 80%;
     left: 10%;
@@ -58,6 +59,7 @@
 .gallerypic2 {
   left: 27vw;
   @include laptopMin {
+    -webkit-animation: pic2Fade 40s ease-in infinite;
     animation: pic2Fade 40s ease-in infinite;
     width: 80%;
     left: 10%;
@@ -72,6 +74,7 @@
 .gallerypic3 {
   left: 18vw;
   @include laptopMin {
+    -webkit-animation: pic3Fade 40s ease-in infinite;
     animation: pic3Fade 40s ease-in infinite;
     width: 80%;
     left: 10%;
@@ -85,6 +88,7 @@
 .gallerypic4 {
   left: 30vw;
   @include laptopMin {
+    -webkit-animation: pic4Fade 40s ease-in infinite;
     animation: pic4Fade 40s ease-in infinite;
     width: 80%;
     left: 10%;
@@ -120,6 +124,7 @@
 .sent1 {
   @include laptopMin {
     top: 118vw;
+    -webkit-animation: pic1Fade 40s ease-in infinite;
     animation: pic1Fade 40s ease-in infinite;
   }
 }
@@ -127,6 +132,7 @@
 .sent2 {
   @include laptopMin {
     top: 80vw;
+    -webkit-animation: pic2Fade 40s ease-in infinite;
     animation: pic2Fade 40s ease-in infinite;
   }
 }
@@ -134,6 +140,7 @@
 .sent3 {
   @include laptopMin {
     top: 120vw;
+    -webkit-animation: pic3Fade 40s ease-in infinite;
     animation: pic3Fade 40s ease-in infinite;
   }
 }
@@ -141,6 +148,7 @@
 .sent4 {
   @include laptopMin {
     top: 70vw;
+    -webkit-animation: pic4Fade 40s ease-in infinite;
     animation: pic4Fade 40s ease-in infinite;
   }
 }

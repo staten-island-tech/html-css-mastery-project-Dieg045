@@ -1491,7 +1491,7 @@
 @media (max-width: 1024px) {
   .gallerypic1 {
     -webkit-animation: pic1Fade 40s ease-in infinite;
-            animation: pic1Fade 40s ease-in infinite;
+    animation: pic1Fade 40s ease-in infinite;
     width: 80%;
     left: 10%;
   }
@@ -1512,7 +1512,7 @@
 @media (max-width: 1024px) {
   .gallerypic2 {
     -webkit-animation: pic2Fade 40s ease-in infinite;
-            animation: pic2Fade 40s ease-in infinite;
+    animation: pic2Fade 40s ease-in infinite;
     width: 80%;
     left: 10%;
     top: 10vw;
@@ -1533,7 +1533,7 @@
 @media (max-width: 1024px) {
   .gallerypic3 {
     -webkit-animation: pic3Fade 40s ease-in infinite;
-            animation: pic3Fade 40s ease-in infinite;
+    animation: pic3Fade 40s ease-in infinite;
     width: 80%;
     left: 10%;
   }
@@ -1553,7 +1553,7 @@
 @media (max-width: 1024px) {
   .gallerypic4 {
     -webkit-animation: pic4Fade 40s ease-in infinite;
-            animation: pic4Fade 40s ease-in infinite;
+    animation: pic4Fade 40s ease-in infinite;
     width: 80%;
     left: 10%;
     top: 10vw;
@@ -1596,7 +1596,7 @@
   .sent1 {
     top: 118vw;
     -webkit-animation: pic1Fade 40s ease-in infinite;
-            animation: pic1Fade 40s ease-in infinite;
+    animation: pic1Fade 40s ease-in infinite;
   }
 }
 
@@ -1604,7 +1604,7 @@
   .sent2 {
     top: 80vw;
     -webkit-animation: pic2Fade 40s ease-in infinite;
-            animation: pic2Fade 40s ease-in infinite;
+    animation: pic2Fade 40s ease-in infinite;
   }
 }
 
@@ -1612,7 +1612,7 @@
   .sent3 {
     top: 120vw;
     -webkit-animation: pic3Fade 40s ease-in infinite;
-            animation: pic3Fade 40s ease-in infinite;
+    animation: pic3Fade 40s ease-in infinite;
   }
 }
 
@@ -1620,7 +1620,7 @@
   .sent4 {
     top: 70vw;
     -webkit-animation: pic4Fade 40s ease-in infinite;
-            animation: pic4Fade 40s ease-in infinite;
+    animation: pic4Fade 40s ease-in infinite;
   }
 }
 
